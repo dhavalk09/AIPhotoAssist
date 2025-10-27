@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📸</text></svg>">
     <script src="https://cdn.jsdelivr.net/npm/exif-js@2.3.0/exif.js"></script>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#000;color:#fff;overflow-x:hidden}.container{min-height:100vh;display:flex;flex-direction:column}.header{background:#000;padding:20px;border-bottom:1px solid #333;display:flex;justify-content:space-between;align-items:center}.header h1{margin:0;font-size:24px;font-weight:700}.header-buttons{display:flex;gap:12px}.header-btn{width:40px;height:40px;border-radius:20px;background:rgba(255,255,255,0.1);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease}.header-btn:hover{background:rgba(255,255,255,0.2)}.main-content{flex:1;padding:20px}.camera-section{background:#111;border-radius:16px;padding:20px;margin-bottom:20px;position:relative;overflow:hidden}.camera-container{position:relative;width:100%;height:400px;background:#000;border-radius:12px;overflow:hidden}.video{width:100%;height:100%;object-fit:cover;border-radius:12px}.camera-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)}.camera-text{font-size:24px;font-weight:600;margin-bottom:8px}.camera-subtext{font-size:16px;opacity:0.7;text-align:center}.composition-overlay{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}.vertical-line{position:absolute;top:0;bottom:0;width:1px;background:rgba(255,255,255,0.3)}.horizontal-line{position:absolute;left:0;right:0;height:1px;background:rgba(255,255,255,0.3)}.camera-status{position:absolute;top:20px;right:20px;background:rgba(0,0,0,0.8);padding:8px 12px;border-radius:20px;display:flex;align-items:center;gap:8px}.status-indicator{width:8px;height:8px;background:#4CAF50;border-radius:50%}.status-text{font-size:12px;font-weight:600}.camera-controls{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:20px;flex-wrap:wrap}.capture-button{width:65px;height:65px;border-radius:50%;background:#fff;border:3px solid #333;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;position:relative;flex-shrink:0}.capture-button:hover{transform:scale(1.05)}.capture-button-inner{width:45px;height:45px;border-radius:50%;background:#333}.control-button{width:40px;height:40px;border-radius:20px;background:rgba(255,255,255,0.1);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;flex-shrink:0}.control-button:hover{background:rgba(255,255,255,0.2)}.ai-button{background:#007AFF;color:#fff;border:none;padding:6px 10px;border-radius:18px;cursor:pointer;display:flex;align-items:center;gap:4px;font-weight:600;transition:all 0.3s ease;font-size:11px;white-space:nowrap;flex-shrink:0}.ai-button:hover{background:#0056CC}.upload-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)}.upload-button{background:#4CAF50;color:#fff;border:none;padding:8px 12px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:6px;font-weight:600;transition:all 0.3s ease;font-size:12px}.upload-button:hover{background:#45A049}.uploaded-image-container{position:relative;width:100%;height:100%}.uploaded-image{width:100%;height:100%;object-fit:cover;border-radius:12px}.clear-image-button{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:15px;background:rgba(255,0,0,0.8);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}.hidden-file-input{display:none}.analysis-panel{background:#111;border-radius:16px;padding:20px;margin-top:20px}.analysis-title{font-size:20px;font-weight:700;margin-bottom:16px;color:#007AFF}.analysis-section{margin-bottom:20px}.section-title{font-size:16px;font-weight:600;margin-bottom:8px;color:#4CAF50}.section-content{font-size:14px;line-height:1.5;opacity:0.9}.analysis-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}.analysis-item{background:rgba(255,255,255,0.05);padding:12px;border-radius:8px}.analysis-label{font-size:12px;opacity:0.7;margin-bottom:4px}.analysis-value{font-size:14px;font-weight:600}.tips-list{list-style:none;padding:0}.tips-list li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1)}.tips-list li:last-child{border-bottom:none}.tips-list li:before{content:"💡";margin-right:8px}.overall-score{text-align:center;padding:20px;background:rgba(0,122,255,0.1);border-radius:12px;margin-top:20px}.score-number{font-size:48px;font-weight:700;color:#007AFF;margin-bottom:8px}.score-label{font-size:16px;opacity:0.8}.instructions-container{background:rgba(0,122,255,0.1);padding:15px;margin:10px;border-radius:8px;border:1px solid #007AFF}.instructions-text{color:#007AFF;font-size:14px;font-weight:600;text-align:center}@media (max-width:768px){.header{padding:15px}.header h1{font-size:20px}.camera-container{height:300px}.capture-button{width:60px;height:60px}.capture-button-inner{width:40px;height:40px}.control-button{width:35px;height:35px}.ai-button{font-size:10px;padding:5px 8px}.analysis-grid{grid-template-columns:1fr}}
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#000;color:#fff;overflow-x:hidden}.container{min-height:100vh;display:flex;flex-direction:column}.header{background:#000;padding:20px;border-bottom:1px solid #333;display:flex;justify-content:space-between;align-items:center}.header h1{margin:0;font-size:24px;font-weight:700}.header-buttons{display:flex;gap:12px}.header-btn{width:40px;height:40px;border-radius:20px;background:rgba(255,255,255,0.1);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease}.header-btn:hover{background:rgba(255,255,255,0.2)}.main-content{flex:1;padding:20px}.camera-section{background:#111;border-radius:16px;padding:20px;margin-bottom:20px;position:relative;overflow:hidden}.camera-container{position:relative;width:100%;height:400px;background:#000;border-radius:12px;overflow:hidden}.video{width:100%;height:100%;object-fit:cover;border-radius:12px}.camera-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)}.camera-text{font-size:24px;font-weight:600;margin-bottom:8px}.camera-subtext{font-size:16px;opacity:0.7;text-align:center}.composition-overlay{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}.vertical-line{position:absolute;top:0;bottom:0;width:1px;background:rgba(255,255,255,0.3)}.horizontal-line{position:absolute;left:0;right:0;height:1px;background:rgba(255,255,255,0.3)}.camera-status{position:absolute;top:20px;right:20px;background:rgba(0,0,0,0.8);padding:8px 12px;border-radius:20px;display:flex;align-items:center;gap:8px}.status-indicator{width:8px;height:8px;background:#4CAF50;border-radius:50%}.status-text{font-size:12px;font-weight:600}.camera-controls{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:20px;flex-wrap:wrap}.capture-button{width:65px;height:65px;border-radius:50%;background:#fff;border:3px solid #333;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;position:relative;flex-shrink:0}.capture-button:hover{transform:scale(1.05)}.capture-button-inner{width:45px;height:45px;border-radius:50%;background:#333}.control-button{width:40px;height:40px;border-radius:20px;background:rgba(255,255,255,0.1);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;flex-shrink:0}.control-button:hover{background:rgba(255,255,255,0.2)}.ai-button{background:#007AFF;color:#fff;border:none;padding:6px 10px;border-radius:18px;cursor:pointer;display:flex;align-items:center;gap:4px;font-weight:600;transition:all 0.3s ease;font-size:11px;white-space:nowrap;flex-shrink:0}.ai-button:hover{background:#0056CC}.enhance-button{background:#FF6B6B;color:#fff;border:none;padding:6px 10px;border-radius:18px;cursor:pointer;display:flex;align-items:center;gap:4px;font-weight:600;transition:all 0.3s ease;font-size:11px;white-space:nowrap;flex-shrink:0}.enhance-button:hover{background:#E55A5A}.upload-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)}.upload-button{background:#4CAF50;color:#fff;border:none;padding:8px 12px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:6px;font-weight:600;transition:all 0.3s ease;font-size:12px}.upload-button:hover{background:#45A049}.uploaded-image-container{position:relative;width:100%;height:100%}.uploaded-image{width:100%;height:100%;object-fit:cover;border-radius:12px}.clear-image-button{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:15px;background:rgba(255,0,0,0.8);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}.hidden-file-input{display:none}.analysis-panel{background:#111;border-radius:16px;padding:20px;margin-top:20px}.analysis-title{font-size:20px;font-weight:700;margin-bottom:16px;color:#007AFF}.analysis-section{margin-bottom:20px}.section-title{font-size:16px;font-weight:600;margin-bottom:8px;color:#4CAF50}.section-content{font-size:14px;line-height:1.5;opacity:0.9}.analysis-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}.analysis-item{background:rgba(255,255,255,0.05);padding:12px;border-radius:8px}.analysis-label{font-size:12px;opacity:0.7;margin-bottom:4px}.analysis-value{font-size:14px;font-weight:600}.tips-list{list-style:none;padding:0}.tips-list li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1)}.tips-list li:last-child{border-bottom:none}.tips-list li:before{content:"💡";margin-right:8px}.overall-score{text-align:center;padding:20px;background:rgba(0,122,255,0.1);border-radius:12px;margin-top:20px}.score-number{font-size:48px;font-weight:700;color:#007AFF;margin-bottom:8px}.score-label{font-size:16px;opacity:0.8}.instructions-container{background:rgba(0,122,255,0.1);padding:15px;margin:10px;border-radius:8px;border:1px solid #007AFF}.instructions-text{color:#007AFF;font-size:14px;font-weight:600;text-align:center}.enhancement-panel{background:#111;border-radius:16px;padding:20px;margin-top:20px;display:none}.enhancement-controls{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap;justify-content:center}.enhancement-slider{display:flex;flex-direction:column;align-items:center;gap:5px}.slider-label{font-size:12px;opacity:0.8}.slider{width:100px;height:4px;background:#333;border-radius:2px;outline:none;cursor:pointer}.slider::-webkit-slider-thumb{appearance:none;width:16px;height:16px;background:#007AFF;border-radius:50%;cursor:pointer}.enhancement-preview{display:flex;gap:20px;justify-content:center;align-items:center;flex-wrap:wrap}.preview-image{width:200px;height:150px;object-fit:cover;border-radius:8px;border:2px solid #333}.preview-label{text-align:center;font-size:12px;opacity:0.8;margin-top:8px}.download-button{background:#4CAF50;color:#fff;border:none;padding:10px 20px;border-radius:20px;cursor:pointer;font-weight:600;margin-top:20px;display:block;margin-left:auto;margin-right:auto}.download-button:hover{background:#45A049}.professional-tips{background:rgba(255,193,7,0.1);border:1px solid #FFC107;border-radius:8px;padding:15px;margin:10px 0}.professional-tips h4{color:#FFC107;margin-bottom:10px}.professional-tips ul{list-style:none;padding:0}.professional-tips li{padding:5px 0;border-bottom:1px solid rgba(255,193,7,0.2)}.professional-tips li:last-child{border-bottom:none}.professional-tips li:before{content:"⭐";margin-right:8px}@media (max-width:768px){.header{padding:15px}.header h1{font-size:20px}.camera-container{height:300px}.capture-button{width:60px;height:60px}.capture-button-inner{width:40px;height:40px}.control-button{width:35px;height:35px}.ai-button{font-size:10px;padding:5px 8px}.enhance-button{font-size:10px;padding:5px 8px}.analysis-grid{grid-template-columns:1fr}.enhancement-preview{flex-direction:column}.preview-image{width:150px;height:100px}}
     </style>
 </head>
 <body>
@@ -80,6 +80,7 @@
                     <button id="stopCameraBtn" class="control-button">⏹️</button>
                     <button id="analyzeBtn" class="ai-button">✨ Analyze</button>
                     <button id="analyzeLastPhotoBtn" class="ai-button" style="background: #4CAF50; display: none;">✨ Last Photo</button>
+                    <button id="enhanceBtn" class="enhance-button" style="display: none;">🎨 Enhance</button>
                 </div>
             </div>
 
@@ -87,6 +88,40 @@
             <div id="analysisPanel" class="analysis-panel" style="display: none;">
                 <div class="analysis-title">📊 AI Photography Analysis</div>
                 <div id="analysisContent"></div>
+            </div>
+
+            <!-- Enhancement Panel -->
+            <div id="enhancementPanel" class="enhancement-panel">
+                <div class="analysis-title">🎨 AI Photo Enhancement</div>
+                <div class="enhancement-controls">
+                    <div class="enhancement-slider">
+                        <div class="slider-label">Brightness</div>
+                        <input type="range" class="slider" id="brightnessSlider" min="-50" max="50" value="0">
+                    </div>
+                    <div class="enhancement-slider">
+                        <div class="slider-label">Contrast</div>
+                        <input type="range" class="slider" id="contrastSlider" min="-50" max="50" value="0">
+                    </div>
+                    <div class="enhancement-slider">
+                        <div class="slider-label">Saturation</div>
+                        <input type="range" class="slider" id="saturationSlider" min="-50" max="50" value="0">
+                    </div>
+                    <div class="enhancement-slider">
+                        <div class="slider-label">Sharpness</div>
+                        <input type="range" class="slider" id="sharpnessSlider" min="0" max="100" value="0">
+                    </div>
+                </div>
+                <div class="enhancement-preview">
+                    <div>
+                        <img id="originalPreview" class="preview-image" alt="Original">
+                        <div class="preview-label">Original</div>
+                    </div>
+                    <div>
+                        <img id="enhancedPreview" class="preview-image" alt="Enhanced">
+                        <div class="preview-label">Enhanced</div>
+                    </div>
+                </div>
+                <button id="downloadEnhancedBtn" class="download-button" style="display: none;">📥 Download Enhanced Photo</button>
             </div>
         </div>
     </div>
@@ -97,6 +132,7 @@
         let uploadedImageData = null;
         let capturedPhotoData = null;
         let capturedPhotoUrl = null;
+        let currentImageForEnhancement = null;
 
         const videoElement = document.getElementById('videoElement');
         const cameraPlaceholder = document.getElementById('cameraPlaceholder');
@@ -107,6 +143,11 @@
         const analysisPanel = document.getElementById('analysisPanel');
         const analysisContent = document.getElementById('analysisContent');
         const analyzeLastPhotoBtn = document.getElementById('analyzeLastPhotoBtn');
+        const enhanceBtn = document.getElementById('enhanceBtn');
+        const enhancementPanel = document.getElementById('enhancementPanel');
+        const originalPreview = document.getElementById('originalPreview');
+        const enhancedPreview = document.getElementById('enhancedPreview');
+        const downloadEnhancedBtn = document.getElementById('downloadEnhancedBtn');
 
         function setMode(mode) {
             currentMode = mode;
@@ -190,9 +231,10 @@
                     a.click();
                     
                     analyzeLastPhotoBtn.style.display = 'flex';
+                    enhanceBtn.style.display = 'flex';
                     
                     console.log('📸 Photo captured and saved!');
-                    alert('Photo captured! Click "Last Photo" for detailed analysis.');
+                    alert('Photo captured! Click "Last Photo" for detailed analysis or "Enhance" for AI improvements.');
                 }
             }, 'image/jpeg', 0.9);
         }
@@ -206,6 +248,7 @@
                     document.getElementById('uploadedImage').src = uploadedImageData;
                     uploadPlaceholder.style.display = 'none';
                     uploadedImageContainer.style.display = 'block';
+                    enhanceBtn.style.display = 'flex';
                 };
                 reader.readAsDataURL(file);
             }
@@ -215,6 +258,7 @@
             uploadedImageData = null;
             uploadPlaceholder.style.display = 'flex';
             uploadedImageContainer.style.display = 'none';
+            enhanceBtn.style.display = 'none';
         }
 
         function toggleComposition() {
@@ -238,7 +282,10 @@
                     
                     let totalBrightness = 0;
                     let totalRed = 0, totalGreen = 0, totalBlue = 0;
+                    let darkPixels = 0, brightPixels = 0;
+                    let edgePixels = 0;
                     
+                    // Advanced analysis
                     for (let i = 0; i < data.length; i += 4) {
                         const r = data[i];
                         const g = data[i + 1];
@@ -249,6 +296,15 @@
                         totalRed += r;
                         totalGreen += g;
                         totalBlue += b;
+                        
+                        if (brightness < 85) darkPixels++;
+                        if (brightness > 170) brightPixels++;
+                        
+                        // Edge detection for sharpness
+                        if (i > 0 && i < data.length - 4) {
+                            const prevBrightness = (data[i-4] + data[i-3] + data[i-2]) / 3;
+                            if (Math.abs(brightness - prevBrightness) > 30) edgePixels++;
+                        }
                     }
                     
                     const pixelCount = data.length / 4;
@@ -257,94 +313,203 @@
                     const avgGreen = totalGreen / pixelCount;
                     const avgBlue = totalBlue / pixelCount;
                     
+                    // Calculate advanced metrics
                     let contrastSum = 0;
+                    let colorVariance = 0;
+                    
                     for (let i = 0; i < data.length; i += 4) {
                         const brightness = (data[i] + data[i + 1] + data[i + 2]) / 3;
                         contrastSum += Math.abs(brightness - avgBrightness);
+                        
+                        const colorDistance = Math.sqrt(
+                            Math.pow(data[i] - avgRed, 2) + 
+                            Math.pow(data[i + 1] - avgGreen, 2) + 
+                            Math.pow(data[i + 2] - avgBlue, 2)
+                        );
+                        colorVariance += colorDistance;
                     }
-                    const contrast = contrastSum / pixelCount;
                     
+                    const contrast = contrastSum / pixelCount;
+                    const colorDiversity = colorVariance / pixelCount;
+                    const sharpness = (edgePixels / pixelCount) * 100;
+                    const exposureBalance = Math.abs(avgBrightness - 128) / 128;
+                    
+                    // Advanced lighting analysis
                     let lightingCondition = 'Balanced lighting';
                     let lightingQuality = 'Good';
                     let colorTemperature = 'Daylight (5500K)';
+                    let lightingScore = 80;
                     
-                    if (avgBrightness < 100) {
-                        lightingCondition = 'Low light conditions';
-                        lightingQuality = 'Needs improvement';
+                    if (avgBrightness < 80) {
+                        lightingCondition = 'Very low light conditions';
+                        lightingQuality = 'Poor - needs significant improvement';
                         colorTemperature = 'Warm (3000K)';
-                    } else if (avgBrightness > 200) {
-                        lightingCondition = 'Bright/overexposed';
-                        lightingQuality = 'Too bright';
+                        lightingScore = 30;
+                    } else if (avgBrightness < 120) {
+                        lightingCondition = 'Low light conditions';
+                        lightingQuality = 'Fair - could be improved';
+                        colorTemperature = 'Warm (4000K)';
+                        lightingScore = 60;
+                    } else if (avgBrightness > 220) {
+                        lightingCondition = 'Overexposed/bright conditions';
+                        lightingQuality = 'Poor - too bright';
                         colorTemperature = 'Cool (6500K)';
+                        lightingScore = 40;
+                    } else if (avgBrightness > 180) {
+                        lightingCondition = 'Bright conditions';
+                        lightingQuality = 'Good but bright';
+                        colorTemperature = 'Cool (6000K)';
+                        lightingScore = 70;
                     }
                     
+                    // Advanced composition analysis
                     const aspectRatio = img.width / img.height;
                     let compositionScore = 70;
                     let hasDepth = true;
+                    let framingScore = 75;
+                    let balanceScore = 70;
+                    let symmetryScore = 60;
+                    let ruleOfThirdsScore = 50;
                     
-                    if (aspectRatio > 1.5 || aspectRatio < 0.7) {
-                        compositionScore -= 10;
+                    // Aspect ratio analysis
+                    if (aspectRatio > 2.0 || aspectRatio < 0.5) {
+                        compositionScore -= 15; // Very wide or tall
+                    } else if (aspectRatio > 1.5 || aspectRatio < 0.7) {
+                        compositionScore -= 10; // Wide or tall
                     }
                     
-                    if (contrast < 30) {
-                        compositionScore -= 15;
+                    // Contrast and depth analysis
+                    if (contrast < 20) {
+                        compositionScore -= 20; // Very low contrast
                         hasDepth = false;
+                    } else if (contrast < 30) {
+                        compositionScore -= 15; // Low contrast
+                        hasDepth = false;
+                    } else if (contrast > 60) {
+                        compositionScore += 10; // High contrast
                     }
                     
+                    // Color analysis
+                    if (colorDiversity > 50) {
+                        compositionScore += 5; // Good color diversity
+                    }
+                    
+                    // Sharpness analysis
+                    if (sharpness > 15) {
+                        compositionScore += 10; // Very sharp
+                    } else if (sharpness > 10) {
+                        compositionScore += 5; // Sharp
+                    } else if (sharpness < 5) {
+                        compositionScore -= 10; // Blurry
+                    }
+                    
+                    // Exposure analysis
+                    if (exposureBalance < 0.1) {
+                        compositionScore += 10; // Well exposed
+                    } else if (exposureBalance > 0.3) {
+                        compositionScore -= 15; // Poorly exposed
+                    }
+                    
+                    // Genre detection with more accuracy
                     let detectedGenre = 'General Photography';
-                    if (avgBrightness > 180 && contrast > 50) {
+                    let genreConfidence = 60;
+                    
+                    if (avgBrightness > 180 && contrast > 50 && sharpness > 10) {
                         detectedGenre = 'Portrait Photography';
-                    } else if (aspectRatio > 1.3) {
+                        genreConfidence = 85;
+                    } else if (aspectRatio > 1.3 && colorDiversity > 40) {
                         detectedGenre = 'Landscape Photography';
-                    } else if (avgBrightness < 120) {
+                        genreConfidence = 80;
+                    } else if (avgBrightness < 120 && contrast < 40) {
                         detectedGenre = 'Low Light Photography';
+                        genreConfidence = 75;
+                    } else if (sharpness > 15 && contrast > 60) {
+                        detectedGenre = 'Street Photography';
+                        genreConfidence = 70;
+                    } else if (colorDiversity > 60 && avgBrightness > 150) {
+                        detectedGenre = 'Nature Photography';
+                        genreConfidence = 75;
                     }
                     
+                    // Generate comprehensive recommendations
                     const recommendations = [];
                     const specificTips = [];
+                    const professionalTips = [];
                     
+                    // Technical recommendations
                     if (avgBrightness < 100) {
-                        recommendations.push('Increase exposure');
+                        recommendations.push('Increase exposure by 1-2 stops');
                         specificTips.push('Try increasing camera exposure or using flash');
+                        professionalTips.push('Consider using a faster lens (f/1.4-f/2.8) or increasing ISO');
                     }
                     if (contrast < 30) {
-                        recommendations.push('Improve contrast');
+                        recommendations.push('Improve contrast in post-processing');
                         specificTips.push('Adjust lighting or post-processing contrast');
+                        professionalTips.push('Use graduated filters or HDR techniques');
+                    }
+                    if (sharpness < 8) {
+                        recommendations.push('Improve focus and sharpness');
+                        specificTips.push('Check focus settings and camera stability');
+                        professionalTips.push('Use tripod, faster shutter speed, or image stabilization');
                     }
                     if (compositionScore < 70) {
                         recommendations.push('Improve composition');
                         specificTips.push('Use rule of thirds, try different angles');
+                        professionalTips.push('Consider leading lines, framing, and negative space');
                     }
-                    if (recommendations.length === 0) {
-                        recommendations.push('Good technical quality');
-                        specificTips.push('Try different compositions for variety');
+                    if (exposureBalance > 0.2) {
+                        recommendations.push('Adjust exposure settings');
+                        specificTips.push('Use exposure compensation');
+                        professionalTips.push('Use spot metering for better exposure control');
                     }
                     
-                    const overallScore = Math.round(
-                        compositionScore + 
-                        (lightingQuality === 'Good' ? 20 : 10) + 
-                        (contrast > 40 ? 10 : 0) + 
-                        (avgBrightness > 100 && avgBrightness < 200 ? 10 : 0)
+                    // Positive feedback
+                    if (recommendations.length === 0) {
+                        recommendations.push('Excellent technical quality');
+                        specificTips.push('Try different compositions for variety');
+                        professionalTips.push('Consider experimenting with different lighting conditions');
+                    }
+                    
+                    // Calculate comprehensive overall score
+                    const technicalScore = Math.min(100, 
+                        (lightingScore * 0.3) + 
+                        (Math.min(100, contrast * 2) * 0.2) + 
+                        (Math.min(100, sharpness * 5) * 0.2) + 
+                        (Math.max(0, 100 - exposureBalance * 200) * 0.3)
                     );
                     
-                    let overallQuality = 'Good';
-                    if (overallScore >= 85) overallQuality = 'Excellent';
-                    else if (overallScore >= 70) overallQuality = 'Good';
-                    else if (overallScore >= 55) overallQuality = 'Fair';
-                    else overallQuality = 'Needs Improvement';
+                    const overallScore = Math.round(
+                        (technicalScore * 0.4) + 
+                        (compositionScore * 0.4) + 
+                        (genreConfidence * 0.2)
+                    );
                     
+                    // Determine quality level
+                    let overallQuality = 'Good';
+                    if (overallScore >= 90) overallQuality = 'Exceptional';
+                    else if (overallScore >= 80) overallQuality = 'Excellent';
+                    else if (overallScore >= 70) overallQuality = 'Good';
+                    else if (overallScore >= 60) overallQuality = 'Fair';
+                    else if (overallScore >= 50) overallQuality = 'Needs Improvement';
+                    else overallQuality = 'Poor';
+                    
+                    // Generate comprehensive strengths and improvements
                     const strengths = [];
                     const improvements = [];
                     
-                    if (overallScore >= 80) strengths.push('Excellent technical quality');
-                    if (contrast > 40) strengths.push('Good contrast');
+                    if (overallScore >= 85) strengths.push('Exceptional technical quality');
+                    if (contrast > 40) strengths.push('Good contrast and dynamic range');
                     if (avgBrightness > 100 && avgBrightness < 200) strengths.push('Proper exposure');
-                    if (compositionScore > 75) strengths.push('Good composition');
+                    if (compositionScore > 80) strengths.push('Excellent composition');
+                    if (sharpness > 12) strengths.push('Sharp and detailed');
+                    if (colorDiversity > 50) strengths.push('Rich color palette');
                     
-                    if (overallScore < 70) improvements.push('Improve overall quality');
-                    if (contrast < 30) improvements.push('Increase contrast');
-                    if (avgBrightness < 100) improvements.push('Better lighting needed');
-                    if (compositionScore < 70) improvements.push('Work on composition');
+                    if (overallScore < 70) improvements.push('Improve overall technical quality');
+                    if (contrast < 30) improvements.push('Increase contrast and dynamic range');
+                    if (avgBrightness < 100) improvements.push('Better lighting and exposure needed');
+                    if (compositionScore < 70) improvements.push('Work on composition and framing');
+                    if (sharpness < 8) improvements.push('Improve focus and sharpness');
+                    if (exposureBalance > 0.2) improvements.push('Better exposure control needed');
                     
                     resolve({
                         lightingCondition,
@@ -352,13 +517,23 @@
                         colorTemperature,
                         brightness: Math.round(avgBrightness),
                         contrast: Math.round(contrast),
+                        sharpness: Math.round(sharpness),
+                        colorDiversity: Math.round(colorDiversity),
+                        exposureBalance: Math.round(exposureBalance * 100),
                         compositionScore,
                         hasDepth,
+                        framingScore,
+                        balanceScore,
+                        symmetryScore,
+                        ruleOfThirdsScore,
                         detectedGenre,
+                        genreConfidence,
                         recommendations,
                         specificTips,
+                        professionalTips,
                         overallScore,
                         overallQuality,
+                        technicalScore: Math.round(technicalScore),
                         strengths,
                         improvements,
                     });
@@ -446,22 +621,30 @@
                         colorTemp: imageAnalysis.colorTemperature,
                         brightness: imageAnalysis.brightness,
                         contrast: imageAnalysis.contrast,
+                        sharpness: imageAnalysis.sharpness,
+                        colorDiversity: imageAnalysis.colorDiversity,
+                        exposureBalance: imageAnalysis.exposureBalance,
                     },
                     composition: {
                         ruleOfThirds: imageAnalysis.compositionScore > 70 ? 'Good composition' : 'Consider rule of thirds',
                         depth: imageAnalysis.hasDepth ? 'Good depth perception' : 'Try adding depth',
                         framing: imageAnalysis.compositionScore > 75 ? 'Well-framed' : 'Consider better framing',
                         balance: imageAnalysis.compositionScore > 70 ? 'Good balance' : 'Try improving balance',
+                        score: imageAnalysis.compositionScore,
+                        ruleOfThirdsScore: imageAnalysis.ruleOfThirdsScore,
                     },
                     settings: {
                         current: `Resolution: ${metadata.resolution}, File Size: ${metadata.fileSize}, Quality: ${imageAnalysis.overallQuality}`,
                         recommended: imageAnalysis.recommendations.join(', '),
-                        reasoning: `Based on analysis of ${metadata.resolution} image with ${imageAnalysis.overallQuality} quality`,
+                        reasoning: `Based on comprehensive analysis of ${metadata.resolution} image with ${imageAnalysis.overallQuality} quality`,
                     },
                     tips: imageAnalysis.specificTips,
+                    professionalTips: imageAnalysis.professionalTips,
                     overall: {
                         score: imageAnalysis.overallScore,
+                        technicalScore: imageAnalysis.technicalScore,
                         genre: imageAnalysis.detectedGenre,
+                        genreConfidence: imageAnalysis.genreConfidence,
                         strengths: imageAnalysis.strengths,
                         improvements: imageAnalysis.improvements,
                         timestamp: new Date().toISOString(),
@@ -469,7 +652,7 @@
                 };
                 
                 updateAnalysisPanel(analysis);
-                alert(`Analysis complete! Score: ${imageAnalysis.overallScore}/100`);
+                alert(`Comprehensive analysis complete! Overall Score: ${imageAnalysis.overallScore}/100, Technical Score: ${imageAnalysis.technicalScore}/100`);
                 
             } catch (error) {
                 console.error('Analysis error:', error);
@@ -520,22 +703,30 @@
                         colorTemp: imageAnalysis.colorTemperature,
                         brightness: imageAnalysis.brightness,
                         contrast: imageAnalysis.contrast,
+                        sharpness: imageAnalysis.sharpness,
+                        colorDiversity: imageAnalysis.colorDiversity,
+                        exposureBalance: imageAnalysis.exposureBalance,
                     },
                     composition: {
                         ruleOfThirds: imageAnalysis.compositionScore > 70 ? 'Good composition' : 'Consider rule of thirds',
                         depth: imageAnalysis.hasDepth ? 'Good depth perception' : 'Try adding depth',
                         framing: imageAnalysis.compositionScore > 75 ? 'Well-framed' : 'Consider better framing',
                         balance: imageAnalysis.compositionScore > 70 ? 'Good balance' : 'Try improving balance',
+                        score: imageAnalysis.compositionScore,
+                        ruleOfThirdsScore: imageAnalysis.ruleOfThirdsScore,
                     },
                     settings: {
                         current: `Resolution: ${metadata.resolution}, File Size: ${metadata.fileSize}, Quality: ${imageAnalysis.overallQuality}`,
                         recommended: imageAnalysis.recommendations.join(', '),
-                        reasoning: `Based on analysis of ${metadata.resolution} image with ${imageAnalysis.overallQuality} quality`,
+                        reasoning: `Based on comprehensive analysis of ${metadata.resolution} image with ${imageAnalysis.overallQuality} quality`,
                     },
                     tips: imageAnalysis.specificTips,
+                    professionalTips: imageAnalysis.professionalTips,
                     overall: {
                         score: imageAnalysis.overallScore,
+                        technicalScore: imageAnalysis.technicalScore,
                         genre: imageAnalysis.detectedGenre,
+                        genreConfidence: imageAnalysis.genreConfidence,
                         strengths: imageAnalysis.strengths,
                         improvements: imageAnalysis.improvements,
                         timestamp: new Date().toISOString(),
@@ -543,7 +734,7 @@
                 };
                 
                 updateAnalysisPanel(analysis);
-                alert(`Analysis complete! Score: ${imageAnalysis.overallScore}/100`);
+                alert(`Comprehensive analysis complete! Overall Score: ${imageAnalysis.overallScore}/100, Technical Score: ${imageAnalysis.technicalScore}/100`);
                 
             } catch (error) {
                 console.error('Analysis error:', error);
@@ -581,12 +772,17 @@
                     colorTemp: 'Daylight (5500K)',
                     brightness: 'Balanced',
                     contrast: 'Good',
+                    sharpness: 'Live feed',
+                    colorDiversity: 'Good',
+                    exposureBalance: 'Balanced',
                 },
                 composition: {
                     ruleOfThirds: 'Consider applying rule of thirds for better composition',
                     depth: 'Good depth of field',
                     framing: 'Well-framed subject',
                     balance: 'Good balance',
+                    score: 75,
+                    ruleOfThirdsScore: 60,
                 },
                 settings: {
                     current: 'Live camera feed - 1280x720 resolution',
@@ -598,9 +794,16 @@
                     'Consider using composition overlays',
                     'Experiment with different lighting conditions',
                 ],
+                professionalTips: [
+                    'Use manual focus for better control',
+                    'Consider using a tripod for stability',
+                    'Experiment with different aperture settings',
+                ],
                 overall: {
                     score: 75,
+                    technicalScore: 70,
                     genre: 'Live Photography',
+                    genreConfidence: 60,
                     strengths: ['Good technical quality', 'Clear image capture', 'Proper exposure'],
                     improvements: ['Try different compositions', 'Experiment with angles', 'Consider lighting variations'],
                     timestamp: new Date().toISOString(),
@@ -608,7 +811,7 @@
             };
             
             updateAnalysisPanel(mockAnalysis);
-            alert('Live scene analysis complete! Check the analysis panel below.');
+            alert('Live scene analysis complete! Check the comprehensive analysis panel below.');
         }
 
         function updateAnalysisPanel(analysis) {
@@ -616,7 +819,10 @@
                 <div class="overall-score">
                     <div class="score-number">${analysis.overall.score}</div>
                     <div class="score-label">Overall Score / 100</div>
-                    <div style="margin-top: 8px; font-size: 14px; opacity: 0.8;">${analysis.overall.genre}</div>
+                    <div style="margin-top: 8px; font-size: 14px; opacity: 0.8;">
+                        Technical: ${analysis.overall.technicalScore}/100 | 
+                        Genre: ${analysis.overall.genre} (${analysis.overall.genreConfidence}% confidence)
+                    </div>
                 </div>
 
                 <div class="analysis-grid">
@@ -657,7 +863,7 @@
                     </div>
 
                     <div class="analysis-section">
-                        <div class="section-title">💡 Lighting Analysis</div>
+                        <div class="section-title">💡 Advanced Lighting Analysis</div>
                         <div class="analysis-item">
                             <div class="analysis-label">Condition</div>
                             <div class="analysis-value">${analysis.lighting.condition}</div>
@@ -672,16 +878,32 @@
                         </div>
                         <div class="analysis-item">
                             <div class="analysis-label">Brightness</div>
-                            <div class="analysis-value">${analysis.lighting.brightness}</div>
+                            <div class="analysis-value">${analysis.lighting.brightness}/255</div>
                         </div>
                         <div class="analysis-item">
                             <div class="analysis-label">Contrast</div>
                             <div class="analysis-value">${analysis.lighting.contrast}</div>
                         </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">Sharpness</div>
+                            <div class="analysis-value">${analysis.lighting.sharpness}%</div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">Color Diversity</div>
+                            <div class="analysis-value">${analysis.lighting.colorDiversity}</div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">Exposure Balance</div>
+                            <div class="analysis-value">${analysis.lighting.exposureBalance}%</div>
+                        </div>
                     </div>
 
                     <div class="analysis-section">
-                        <div class="section-title">🎨 Composition</div>
+                        <div class="section-title">🎨 Composition Analysis</div>
+                        <div class="analysis-item">
+                            <div class="analysis-label">Overall Score</div>
+                            <div class="analysis-value">${analysis.composition.score}/100</div>
+                        </div>
                         <div class="analysis-item">
                             <div class="analysis-label">Rule of Thirds</div>
                             <div class="analysis-value">${analysis.composition.ruleOfThirds}</div>
@@ -701,7 +923,7 @@
                     </div>
 
                     <div class="analysis-section">
-                        <div class="section-title">⚙️ Settings</div>
+                        <div class="section-title">⚙️ Settings & Recommendations</div>
                         <div class="analysis-item">
                             <div class="analysis-label">Current</div>
                             <div class="analysis-value">${analysis.settings.current}</div>
@@ -724,6 +946,13 @@
                     </ul>
                 </div>
 
+                <div class="professional-tips">
+                    <h4>⭐ Professional Recommendations</h4>
+                    <ul>
+                        ${analysis.professionalTips.map(tip => `<li>${tip}</li>`).join('')}
+                    </ul>
+                </div>
+
                 <div class="analysis-section">
                     <div class="section-title">✅ Strengths</div>
                     <ul class="tips-list">
@@ -742,6 +971,127 @@
             analysisPanel.style.display = 'block';
         }
 
+        function showEnhancementPanel() {
+            const imageData = capturedPhotoData || uploadedImageData;
+            if (!imageData) {
+                alert('No image available for enhancement. Please capture or upload a photo first.');
+                return;
+            }
+
+            currentImageForEnhancement = imageData;
+            originalPreview.src = imageData;
+            enhancedPreview.src = imageData;
+            enhancementPanel.style.display = 'block';
+            downloadEnhancedBtn.style.display = 'none';
+            
+            // Reset sliders
+            document.getElementById('brightnessSlider').value = 0;
+            document.getElementById('contrastSlider').value = 0;
+            document.getElementById('saturationSlider').value = 0;
+            document.getElementById('sharpnessSlider').value = 0;
+        }
+
+        function enhanceImage() {
+            if (!currentImageForEnhancement) return;
+
+            const img = new Image();
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                
+                canvas.width = img.width;
+                canvas.height = img.height;
+                ctx.drawImage(img, 0, 0);
+                
+                const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                const data = imageData.data;
+                
+                const brightness = parseInt(document.getElementById('brightnessSlider').value);
+                const contrast = parseInt(document.getElementById('contrastSlider').value);
+                const saturation = parseInt(document.getElementById('saturationSlider').value);
+                const sharpness = parseInt(document.getElementById('sharpnessSlider').value);
+                
+                // Apply enhancements
+                for (let i = 0; i < data.length; i += 4) {
+                    let r = data[i];
+                    let g = data[i + 1];
+                    let b = data[i + 2];
+                    
+                    // Brightness adjustment
+                    r += brightness;
+                    g += brightness;
+                    b += brightness;
+                    
+                    // Contrast adjustment
+                    const contrastFactor = (259 * (contrast + 255)) / (255 * (259 - contrast));
+                    r = contrastFactor * (r - 128) + 128;
+                    g = contrastFactor * (g - 128) + 128;
+                    b = contrastFactor * (b - 128) + 128;
+                    
+                    // Saturation adjustment
+                    const gray = 0.299 * r + 0.587 * g + 0.114 * b;
+                    const saturationFactor = (saturation + 100) / 100;
+                    r = gray + saturationFactor * (r - gray);
+                    g = gray + saturationFactor * (g - gray);
+                    b = gray + saturationFactor * (b - gray);
+                    
+                    // Clamp values
+                    data[i] = Math.max(0, Math.min(255, r));
+                    data[i + 1] = Math.max(0, Math.min(255, g));
+                    data[i + 2] = Math.max(0, Math.min(255, b));
+                }
+                
+                // Apply sharpening if requested
+                if (sharpness > 0) {
+                    const sharpeningKernel = [
+                        0, -sharpness/100, 0,
+                        -sharpness/100, 1 + 4*sharpness/100, -sharpness/100,
+                        0, -sharpness/100, 0
+                    ];
+                    
+                    const tempData = new Uint8ClampedArray(data);
+                    for (let y = 1; y < canvas.height - 1; y++) {
+                        for (let x = 1; x < canvas.width - 1; x++) {
+                            const idx = (y * canvas.width + x) * 4;
+                            
+                            let r = 0, g = 0, b = 0;
+                            for (let ky = -1; ky <= 1; ky++) {
+                                for (let kx = -1; kx <= 1; kx++) {
+                                    const kidx = ((y + ky) * canvas.width + (x + kx)) * 4;
+                                    const kernelIdx = (ky + 1) * 3 + (kx + 1);
+                                    r += tempData[kidx] * sharpeningKernel[kernelIdx];
+                                    g += tempData[kidx + 1] * sharpeningKernel[kernelIdx];
+                                    b += tempData[kidx + 2] * sharpeningKernel[kernelIdx];
+                                }
+                            }
+                            
+                            data[idx] = Math.max(0, Math.min(255, r));
+                            data[idx + 1] = Math.max(0, Math.min(255, g));
+                            data[idx + 2] = Math.max(0, Math.min(255, b));
+                        }
+                    }
+                }
+                
+                ctx.putImageData(imageData, 0, 0);
+                
+                canvas.toBlob((blob) => {
+                    if (blob) {
+                        const url = URL.createObjectURL(blob);
+                        enhancedPreview.src = url;
+                        downloadEnhancedBtn.style.display = 'block';
+                        downloadEnhancedBtn.onclick = () => {
+                            const a = document.createElement('a');
+                            a.href = url;
+                            a.download = `enhanced-photo-${Date.now()}.jpg`;
+                            a.click();
+                        };
+                    }
+                }, 'image/jpeg', 0.9);
+            };
+            
+            img.src = currentImageForEnhancement;
+        }
+
         // Event Listeners
         document.getElementById('cameraModeBtn').addEventListener('click', () => setMode('camera'));
         document.getElementById('uploadModeBtn').addEventListener('click', () => setMode('upload'));
@@ -757,7 +1107,14 @@
             }
         });
         document.getElementById('analyzeLastPhotoBtn').addEventListener('click', analyzeCapturedPhoto);
+        document.getElementById('enhanceBtn').addEventListener('click', showEnhancementPanel);
         document.getElementById('fileInput').addEventListener('change', handleFileUpload);
+
+        // Enhancement slider event listeners
+        document.getElementById('brightnessSlider').addEventListener('input', enhanceImage);
+        document.getElementById('contrastSlider').addEventListener('input', enhanceImage);
+        document.getElementById('saturationSlider').addEventListener('input', enhanceImage);
+        document.getElementById('sharpnessSlider').addEventListener('input', enhanceImage);
     </script>
 </body>
 </html>
