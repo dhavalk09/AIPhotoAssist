@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📸</text></svg>">
     <script src="https://cdn.jsdelivr.net/npm/exif-js@2.3.0/exif.js"></script>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#000;color:#fff;overflow-x:hidden}.container{min-height:100vh;display:flex;flex-direction:column}.header{background:#000;padding:20px;border-bottom:1px solid #333;display:flex;justify-content:space-between;align-items:center}.header h1{margin:0;font-size:24px;font-weight:700}.header-buttons{display:flex;gap:12px}.header-btn{width:40px;height:40px;border-radius:20px;background:rgba(255,255,255,0.1);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease}.header-btn:hover{background:rgba(255,255,255,0.2)}.main-content{flex:1;padding:20px}.camera-section{background:#111;border-radius:16px;padding:20px;margin-bottom:20px;position:relative;overflow:hidden}.camera-container{position:relative;width:100%;height:400px;background:#000;border-radius:12px;overflow:hidden}.video{width:100%;height:100%;object-fit:cover;border-radius:12px}.camera-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)}.camera-text{font-size:24px;font-weight:600;margin-bottom:8px}.camera-subtext{font-size:16px;opacity:0.7;text-align:center}.composition-overlay{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}.vertical-line{position:absolute;top:0;bottom:0;width:1px;background:rgba(255,255,255,0.3)}.horizontal-line{position:absolute;left:0;right:0;height:1px;background:rgba(255,255,255,0.3)}.camera-status{position:absolute;top:20px;right:20px;background:rgba(0,0,0,0.8);padding:8px 12px;border-radius:20px;display:flex;align-items:center;gap:8px}.status-indicator{width:8px;height:8px;background:#4CAF50;border-radius:50%}.status-text{font-size:12px;font-weight:600}.camera-controls{display:flex;justify-content:center;align-items:center;gap:20px;margin-top:20px}.capture-button{width:80px;height:80px;border-radius:50%;background:#fff;border:4px solid #333;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;position:relative}.capture-button:hover{transform:scale(1.05)}.capture-button-inner{width:60px;height:60px;border-radius:50%;background:#333}.control-button{width:50px;height:50px;border-radius:25px;background:rgba(255,255,255,0.1);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease}.control-button:hover{background:rgba(255,255,255,0.2)}.ai-button{background:#007AFF;color:#fff;border:none;padding:12px 20px;border-radius:25px;cursor:pointer;display:flex;align-items:center;gap:8px;font-weight:600;transition:all 0.3s ease}.ai-button:hover{background:#0056CC}.upload-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)}.upload-button{background:#4CAF50;color:#fff;border:none;padding:12px 20px;border-radius:25px;cursor:pointer;display:flex;align-items:center;gap:8px;font-weight:600;transition:all 0.3s ease}.upload-button:hover{background:#45A049}.uploaded-image-container{position:relative;width:100%;height:100%}.uploaded-image{width:100%;height:100%;object-fit:cover;border-radius:12px}.clear-image-button{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:15px;background:rgba(255,0,0,0.8);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}.hidden-file-input{display:none}.analysis-panel{background:#111;border-radius:16px;padding:20px;margin-top:20px}.analysis-title{font-size:20px;font-weight:700;margin-bottom:16px;color:#007AFF}.analysis-section{margin-bottom:20px}.section-title{font-size:16px;font-weight:600;margin-bottom:8px;color:#4CAF50}.section-content{font-size:14px;line-height:1.5;opacity:0.9}.analysis-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}.analysis-item{background:rgba(255,255,255,0.05);padding:12px;border-radius:8px}.analysis-label{font-size:12px;opacity:0.7;margin-bottom:4px}.analysis-value{font-size:14px;font-weight:600}.tips-list{list-style:none;padding:0}.tips-list li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1)}.tips-list li:last-child{border-bottom:none}.tips-list li:before{content:"💡";margin-right:8px}.overall-score{text-align:center;padding:20px;background:rgba(0,122,255,0.1);border-radius:12px;margin-top:20px}.score-number{font-size:48px;font-weight:700;color:#007AFF;margin-bottom:8px}.score-label{font-size:16px;opacity:0.8}.debug-info{background:rgba(0,0,0,0.8);padding:10px;margin:10px;border-radius:8px;font-family:monospace;font-size:12px;color:#00FF00}.instructions-container{background:rgba(0,122,255,0.1);padding:15px;margin:10px;border-radius:8px;border:1px solid #007AFF}.instructions-text{color:#007AFF;font-size:14px;font-weight:600;text-align:center}@media (max-width:768px){.header{padding:15px}.header h1{font-size:20px}.camera-container{height:300px}.capture-button{width:70px;height:70px}.capture-button-inner{width:50px;height:50px}.analysis-grid{grid-template-columns:1fr}}
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#000;color:#fff;overflow-x:hidden}.container{min-height:100vh;display:flex;flex-direction:column}.header{background:#000;padding:20px;border-bottom:1px solid #333;display:flex;justify-content:space-between;align-items:center}.header h1{margin:0;font-size:24px;font-weight:700}.header-buttons{display:flex;gap:12px}.header-btn{width:40px;height:40px;border-radius:20px;background:rgba(255,255,255,0.1);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease}.header-btn:hover{background:rgba(255,255,255,0.2)}.main-content{flex:1;padding:20px}.camera-section{background:#111;border-radius:16px;padding:20px;margin-bottom:20px;position:relative;overflow:hidden}.camera-container{position:relative;width:100%;height:400px;background:#000;border-radius:12px;overflow:hidden}.video{width:100%;height:100%;object-fit:cover;border-radius:12px}.camera-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)}.camera-text{font-size:24px;font-weight:600;margin-bottom:8px}.camera-subtext{font-size:16px;opacity:0.7;text-align:center}.composition-overlay{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}.vertical-line{position:absolute;top:0;bottom:0;width:1px;background:rgba(255,255,255,0.3)}.horizontal-line{position:absolute;left:0;right:0;height:1px;background:rgba(255,255,255,0.3)}.camera-status{position:absolute;top:20px;right:20px;background:rgba(0,0,0,0.8);padding:8px 12px;border-radius:20px;display:flex;align-items:center;gap:8px}.status-indicator{width:8px;height:8px;background:#4CAF50;border-radius:50%}.status-text{font-size:12px;font-weight:600}.camera-controls{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:20px;flex-wrap:wrap}.capture-button{width:65px;height:65px;border-radius:50%;background:#fff;border:3px solid #333;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;position:relative;flex-shrink:0}.capture-button:hover{transform:scale(1.05)}.capture-button-inner{width:45px;height:45px;border-radius:50%;background:#333}.control-button{width:40px;height:40px;border-radius:20px;background:rgba(255,255,255,0.1);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;flex-shrink:0}.control-button:hover{background:rgba(255,255,255,0.2)}.ai-button{background:#007AFF;color:#fff;border:none;padding:6px 10px;border-radius:18px;cursor:pointer;display:flex;align-items:center;gap:4px;font-weight:600;transition:all 0.3s ease;font-size:11px;white-space:nowrap;flex-shrink:0}.ai-button:hover{background:#0056CC}.upload-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)}.upload-button{background:#4CAF50;color:#fff;border:none;padding:8px 12px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:6px;font-weight:600;transition:all 0.3s ease;font-size:12px}.upload-button:hover{background:#45A049}.uploaded-image-container{position:relative;width:100%;height:100%}.uploaded-image{width:100%;height:100%;object-fit:cover;border-radius:12px}.clear-image-button{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:15px;background:rgba(255,0,0,0.8);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}.hidden-file-input{display:none}.analysis-panel{background:#111;border-radius:16px;padding:20px;margin-top:20px}.analysis-title{font-size:20px;font-weight:700;margin-bottom:16px;color:#007AFF}.analysis-section{margin-bottom:20px}.section-title{font-size:16px;font-weight:600;margin-bottom:8px;color:#4CAF50}.section-content{font-size:14px;line-height:1.5;opacity:0.9}.analysis-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}.analysis-item{background:rgba(255,255,255,0.05);padding:12px;border-radius:8px}.analysis-label{font-size:12px;opacity:0.7;margin-bottom:4px}.analysis-value{font-size:14px;font-weight:600}.tips-list{list-style:none;padding:0}.tips-list li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1)}.tips-list li:last-child{border-bottom:none}.tips-list li:before{content:"💡";margin-right:8px}.overall-score{text-align:center;padding:20px;background:rgba(0,122,255,0.1);border-radius:12px;margin-top:20px}.score-number{font-size:48px;font-weight:700;color:#007AFF;margin-bottom:8px}.score-label{font-size:16px;opacity:0.8}.instructions-container{background:rgba(0,122,255,0.1);padding:15px;margin:10px;border-radius:8px;border:1px solid #007AFF}.instructions-text{color:#007AFF;font-size:14px;font-weight:600;text-align:center}@media (max-width:768px){.header{padding:15px}.header h1{font-size:20px}.camera-container{height:300px}.capture-button{width:60px;height:60px}.capture-button-inner{width:40px;height:40px}.control-button{width:35px;height:35px}.ai-button{font-size:10px;padding:5px 8px}.analysis-grid{grid-template-columns:1fr}}
     </style>
 </head>
 <body>
@@ -25,15 +25,6 @@
         </div>
 
         <div class="main-content">
-            <!-- Debug Info -->
-            <div id="debugInfo" class="debug-info">
-                <div style="color: #00FF00; font-family: monospace; font-size: 12px;">
-                    Debug: Camera Active: NO<br>
-                    Analysis Mode: camera<br>
-                    Uploaded Image: NO
-                </div>
-            </div>
-
             <!-- Instructions -->
             <div class="instructions-container">
                 <div class="instructions-text">
@@ -82,13 +73,13 @@
                 </div>
                 
                 <div class="camera-controls">
-                    <button id="startCameraBtn" class="control-button">📷 Start Camera</button>
+                    <button id="startCameraBtn" class="control-button">📷</button>
                     <button id="captureBtn" class="capture-button">
                         <div class="capture-button-inner"></div>
                     </button>
-                    <button id="stopCameraBtn" class="control-button">⏹️ Stop</button>
-                    <button id="analyzeBtn" class="ai-button">✨ Analyze Scene</button>
-                    <button id="analyzeLastPhotoBtn" class="ai-button" style="background: #4CAF50; display: none;">✨ Analyze Last Photo</button>
+                    <button id="stopCameraBtn" class="control-button">⏹️</button>
+                    <button id="analyzeBtn" class="ai-button">✨ Analyze</button>
+                    <button id="analyzeLastPhotoBtn" class="ai-button" style="background: #4CAF50; display: none;">✨ Last Photo</button>
                 </div>
             </div>
 
@@ -117,23 +108,8 @@
         const analysisContent = document.getElementById('analysisContent');
         const analyzeLastPhotoBtn = document.getElementById('analyzeLastPhotoBtn');
 
-        function updateDebugInfo() {
-            const debugInfo = document.getElementById('debugInfo');
-            if (debugInfo) {
-                debugInfo.innerHTML = `
-                    <div style="color: #00FF00; font-family: monospace; font-size: 12px;">
-                        Debug: Camera Active: ${cameraActive ? 'YES' : 'NO'}<br>
-                        Analysis Mode: ${currentMode}<br>
-                        Uploaded Image: ${uploadedImageData ? 'YES' : 'NO'}<br>
-                        Captured Photo: ${capturedPhotoData ? 'YES' : 'NO'}
-                    </div>
-                `;
-            }
-        }
-
         function setMode(mode) {
             currentMode = mode;
-            updateDebugInfo();
             
             if (mode === 'camera') {
                 cameraPlaceholder.style.display = 'flex';
@@ -142,7 +118,7 @@
                 document.getElementById('startCameraBtn').style.display = 'flex';
                 document.getElementById('captureBtn').style.display = 'flex';
                 document.getElementById('stopCameraBtn').style.display = 'flex';
-                document.getElementById('analyzeBtn').textContent = '✨ Analyze Scene';
+                document.getElementById('analyzeBtn').textContent = '✨ Analyze';
             } else {
                 cameraPlaceholder.style.display = 'none';
                 uploadPlaceholder.style.display = 'flex';
@@ -150,7 +126,7 @@
                 document.getElementById('startCameraBtn').style.display = 'none';
                 document.getElementById('captureBtn').style.display = 'none';
                 document.getElementById('stopCameraBtn').style.display = 'none';
-                document.getElementById('analyzeBtn').textContent = '✨ Analyze Image';
+                document.getElementById('analyzeBtn').textContent = '✨ Analyze';
             }
         }
 
@@ -172,7 +148,6 @@
                 cameraActive = true;
                 
                 console.log('✅ Camera started successfully');
-                updateDebugInfo();
                 
             } catch (error) {
                 console.error('❌ Camera error:', error);
@@ -189,7 +164,6 @@
             cameraPlaceholder.style.display = 'flex';
             cameraStatus.style.display = 'none';
             cameraActive = false;
-            updateDebugInfo();
         }
 
         function capturePhoto() {
@@ -216,10 +190,9 @@
                     a.click();
                     
                     analyzeLastPhotoBtn.style.display = 'flex';
-                    updateDebugInfo();
                     
                     console.log('📸 Photo captured and saved!');
-                    alert('Photo captured! Click "Analyze Last Photo" for detailed analysis.');
+                    alert('Photo captured! Click "Last Photo" for detailed analysis.');
                 }
             }, 'image/jpeg', 0.9);
         }
@@ -233,7 +206,6 @@
                     document.getElementById('uploadedImage').src = uploadedImageData;
                     uploadPlaceholder.style.display = 'none';
                     uploadedImageContainer.style.display = 'block';
-                    updateDebugInfo();
                 };
                 reader.readAsDataURL(file);
             }
@@ -243,7 +215,6 @@
             uploadedImageData = null;
             uploadPlaceholder.style.display = 'flex';
             uploadedImageContainer.style.display = 'none';
-            updateDebugInfo();
         }
 
         function toggleComposition() {
@@ -787,9 +758,6 @@
         });
         document.getElementById('analyzeLastPhotoBtn').addEventListener('click', analyzeCapturedPhoto);
         document.getElementById('fileInput').addEventListener('change', handleFileUpload);
-
-        // Initialize
-        updateDebugInfo();
     </script>
 </body>
 </html>
