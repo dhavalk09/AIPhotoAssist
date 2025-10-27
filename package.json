@@ -1,0 +1,42 @@
+{
+  "name": "ai-travel-photographer",
+  "version": "1.0.0",
+  "description": "AI-powered photography assistant providing real-time camera settings, composition tips, and professional analysis",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "deploy:netlify": "echo 'Drag and drop the build folder to Netlify'",
+    "deploy:vercel": "vercel --prod",
+    "deploy:firebase": "firebase deploy"
+  },
+  "keywords": [
+    "photography",
+    "AI",
+    "camera",
+    "travel",
+    "composition",
+    "analysis",
+    "professional",
+    "web-app"
+  ],
+  "author": "AI Travel Photographer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ai-travel-photographer"
+  },
+  "homepage": "https://yourusername.github.io/ai-travel-photographer",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0",
+    "firebase-tools": "^12.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
