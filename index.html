@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📸</text></svg>">
     <script src="https://cdn.jsdelivr.net/npm/exif-js@2.3.0/exif.js"></script>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#000;color:#fff;overflow-x:hidden}.container{min-height:100vh;display:flex;flex-direction:column}.header{background:#000;padding:20px;border-bottom:1px solid #333;display:flex;justify-content:space-between;align-items:center}.header h1{margin:0;font-size:24px;font-weight:700}.header-buttons{display:flex;gap:12px}.header-btn{width:40px;height:40px;border-radius:20px;background:rgba(255,255,255,0.1);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease}.header-btn:hover{background:rgba(255,255,255,0.2)}.main-content{flex:1;padding:20px}.camera-section{background:#111;border-radius:16px;padding:20px;margin-bottom:20px;position:relative;overflow:hidden}.camera-container{position:relative;width:100%;height:400px;background:#000;border-radius:12px;overflow:hidden}.video{width:100%;height:100%;object-fit:cover;border-radius:12px}.camera-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)}.camera-text{font-size:24px;font-weight:600;margin-bottom:8px}.camera-subtext{font-size:16px;opacity:0.7;text-align:center}.composition-overlay{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}.vertical-line{position:absolute;top:0;bottom:0;width:1px;background:rgba(255,255,255,0.3)}.horizontal-line{position:absolute;left:0;right:0;height:1px;background:rgba(255,255,255,0.3)}.camera-status{position:absolute;top:20px;right:20px;background:rgba(0,0,0,0.8);padding:8px 12px;border-radius:20px;display:flex;align-items:center;gap:8px}.status-indicator{width:8px;height:8px;background:#4CAF50;border-radius:50%}.status-text{font-size:12px;font-weight:600}.camera-controls{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:20px;flex-wrap:wrap}.capture-button{width:65px;height:65px;border-radius:50%;background:#fff;border:3px solid #333;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;position:relative;flex-shrink:0}.capture-button:hover{transform:scale(1.05)}.capture-button-inner{width:45px;height:45px;border-radius:50%;background:#333}.control-button{width:40px;height:40px;border-radius:20px;background:rgba(255,255,255,0.1);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;flex-shrink:0}.control-button:hover{background:rgba(255,255,255,0.2)}.ai-button{background:#007AFF;color:#fff;border:none;padding:6px 10px;border-radius:18px;cursor:pointer;display:flex;align-items:center;gap:4px;font-weight:600;transition:all 0.3s ease;font-size:11px;white-space:nowrap;flex-shrink:0}.ai-button:hover{background:#0056CC}.enhance-button{background:#FF6B6B;color:#fff;border:none;padding:6px 10px;border-radius:18px;cursor:pointer;display:flex;align-items:center;gap:4px;font-weight:600;transition:all 0.3s ease;font-size:11px;white-space:nowrap;flex-shrink:0}.enhance-button:hover{background:#E55A5A}.upload-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)}.upload-button{background:#4CAF50;color:#fff;border:none;padding:8px 12px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:6px;font-weight:600;transition:all 0.3s ease;font-size:12px}.upload-button:hover{background:#45A049}.uploaded-image-container{position:relative;width:100%;height:100%}.uploaded-image{width:100%;height:100%;object-fit:cover;border-radius:12px}.clear-image-button{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:15px;background:rgba(255,0,0,0.8);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}.hidden-file-input{display:none}.analysis-panel{background:#111;border-radius:16px;padding:20px;margin-top:20px}.analysis-title{font-size:20px;font-weight:700;margin-bottom:16px;color:#007AFF}.analysis-section{margin-bottom:20px}.section-title{font-size:16px;font-weight:600;margin-bottom:8px;color:#4CAF50}.section-content{font-size:14px;line-height:1.5;opacity:0.9}.analysis-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}.analysis-item{background:rgba(255,255,255,0.05);padding:12px;border-radius:8px}.analysis-label{font-size:12px;opacity:0.7;margin-bottom:4px}.analysis-value{font-size:14px;font-weight:600}.tips-list{list-style:none;padding:0}.tips-list li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1)}.tips-list li:last-child{border-bottom:none}.tips-list li:before{content:"💡";margin-right:8px}.overall-score{text-align:center;padding:20px;background:rgba(0,122,255,0.1);border-radius:12px;margin-top:20px}.score-number{font-size:48px;font-weight:700;color:#007AFF;margin-bottom:8px}.score-label{font-size:16px;opacity:0.8}.instructions-container{background:rgba(0,122,255,0.1);padding:15px;margin:10px;border-radius:8px;border:1px solid #007AFF}.instructions-text{color:#007AFF;font-size:14px;font-weight:600;text-align:center}.enhancement-panel{background:#111;border-radius:16px;padding:20px;margin-top:20px;display:none}.enhancement-preview{display:flex;gap:20px;justify-content:center;align-items:center;flex-wrap:wrap}.preview-image{width:200px;height:150px;object-fit:cover;border-radius:8px;border:2px solid #333}.preview-label{text-align:center;font-size:12px;opacity:0.8;margin-top:8px}.download-button{background:#4CAF50;color:#fff;border:none;padding:10px 20px;border-radius:20px;cursor:pointer;font-weight:600;margin-top:20px;display:block;margin-left:auto;margin-right:auto}.download-button:hover{background:#45A049}.professional-tips{background:rgba(255,193,7,0.1);border:1px solid #FFC107;border-radius:8px;padding:15px;margin:10px 0}.professional-tips h4{color:#FFC107;margin-bottom:10px}.professional-tips ul{list-style:none;padding:0}.professional-tips li{padding:5px 0;border-bottom:1px solid rgba(255,193,7,0.2)}.professional-tips li:last-child{border-bottom:none}.professional-tips li:before{content:"⭐";margin-right:8px}.examples-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:1000;display:none;overflow-y:auto}.examples-modal-content{background:#111;margin:20px;border-radius:16px;padding:20px;max-width:1200px;margin-left:auto;margin-right:auto}.examples-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.examples-title{font-size:24px;font-weight:700;color:#FFD700}.close-examples{background:#FF6B6B;color:#fff;border:none;padding:8px 12px;border-radius:20px;cursor:pointer;font-weight:600}.close-examples:hover{background:#E55A5A}.examples-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}.example-card{background:rgba(255,255,255,0.05);border-radius:12px;overflow:hidden;transition:transform 0.3s ease}.example-card:hover{transform:scale(1.02)}.example-image{width:100%;height:250px;object-fit:cover}.example-content{padding:15px}.example-score{display:flex;align-items:center;gap:8px;margin-bottom:10px}.score-badge{background:#FFD700;color:#000;padding:4px 8px;border-radius:12px;font-size:12px;font-weight:700}.example-title{font-size:16px;font-weight:600;margin-bottom:8px}.example-description{font-size:14px;opacity:0.8;line-height:1.4}.example-features{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.feature-tag{background:rgba(255,215,0,0.2);color:#FFD700;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:600}@media (max-width:768px){.header{padding:15px}.header h1{font-size:20px}.camera-container{height:300px}.capture-button{width:60px;height:60px}.capture-button-inner{width:40px;height:40px}.control-button{width:35px;height:35px}.ai-button{font-size:10px;padding:5px 8px}.enhance-button{font-size:10px;padding:5px 8px}.analysis-grid{grid-template-columns:1fr}.enhancement-preview{flex-direction:column}.preview-image{width:150px;height:100px}.examples-modal-content{margin:10px}.examples-grid{grid-template-columns:1fr}}
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#000;color:#fff;overflow-x:hidden}.container{min-height:100vh;display:flex;flex-direction:column}.header{background:#000;padding:20px;border-bottom:1px solid #333;display:flex;justify-content:space-between;align-items:center}.header h1{margin:0;font-size:24px;font-weight:700}.header-buttons{display:flex;gap:12px}.header-btn{width:40px;height:40px;border-radius:20px;background:rgba(255,255,255,0.1);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease}.header-btn:hover{background:rgba(255,255,255,0.2)}.main-content{flex:1;padding:20px}.camera-section{background:#111;border-radius:16px;padding:20px;margin-bottom:20px;position:relative;overflow:hidden}.camera-container{position:relative;width:100%;height:400px;background:#000;border-radius:12px;overflow:hidden}.video{width:100%;height:100%;object-fit:cover;border-radius:12px}.camera-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)}.camera-text{font-size:24px;font-weight:600;margin-bottom:8px}.camera-subtext{font-size:16px;opacity:0.7;text-align:center}.composition-overlay{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}.vertical-line{position:absolute;top:0;bottom:0;width:1px;background:rgba(255,255,255,0.3)}.horizontal-line{position:absolute;left:0;right:0;height:1px;background:rgba(255,255,255,0.3)}.camera-status{position:absolute;top:20px;left:20px;background:rgba(0,0,0,0.8);padding:8px 12px;border-radius:20px;display:flex;align-items:center;gap:8px;z-index:5}.status-indicator{width:8px;height:8px;background:#4CAF50;border-radius:50%}.status-text{font-size:12px;font-weight:600}.camera-controls{display:flex;justify-content:center;align-items:center;gap:20px;margin-top:20px}.capture-button{width:80px;height:80px;border-radius:50%;background:#fff;border:4px solid #333;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;position:relative}.capture-button:hover{transform:scale(1.05)}.capture-button-inner{width:60px;height:60px;border-radius:50%;background:#333}.control-button{width:50px;height:50px;border-radius:25px;background:rgba(255,255,255,0.1);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease}.control-button:hover{background:rgba(255,255,255,0.2)}.ai-button{background:#007AFF;color:#fff;border:none;padding:12px 20px;border-radius:25px;cursor:pointer;display:flex;align-items:center;gap:8px;font-weight:600;transition:all 0.3s ease}.ai-button:hover{background:#0056CC}.upload-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,0.8)}.upload-button{background:#4CAF50;color:#fff;border:none;padding:12px 20px;border-radius:25px;cursor:pointer;display:flex;align-items:center;gap:8px;font-weight:600;transition:all 0.3s ease}.upload-button:hover{background:#45A049}.uploaded-image-container{position:relative;width:100%;height:100%}.uploaded-image{width:100%;height:100%;object-fit:cover;border-radius:12px}.clear-image-button{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:15px;background:rgba(255,0,0,0.8);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}.hidden-file-input{display:none}.analysis-panel{background:#111;border-radius:16px;padding:20px;margin-top:20px}.analysis-title{font-size:20px;font-weight:700;margin-bottom:16px;color:#007AFF}.analysis-section{margin-bottom:20px}.section-title{font-size:16px;font-weight:600;margin-bottom:8px;color:#4CAF50}.section-content{font-size:14px;line-height:1.5;opacity:0.9}.analysis-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}.analysis-item{background:rgba(255,255,255,0.05);padding:12px;border-radius:8px}.analysis-label{font-size:12px;opacity:0.7;margin-bottom:4px}.analysis-value{font-size:14px;font-weight:600}.tips-list{list-style:none;padding:0}.tips-list li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1)}.tips-list li:last-child{border-bottom:none}.tips-list li:before{content:"💡";margin-right:8px}.overall-score{text-align:center;padding:20px;background:rgba(0,122,255,0.1);border-radius:12px;margin-top:20px}.score-number{font-size:48px;font-weight:700;color:#007AFF;margin-bottom:8px}.score-label{font-size:16px;opacity:0.8}.debug-info{background:rgba(0,0,0,0.8);padding:10px;margin:10px;border-radius:8px;font-family:monospace;font-size:12px;color:#00FF00}.instructions-container{background:rgba(0,122,255,0.1);padding:15px;margin:10px;border-radius:8px;border:1px solid #007AFF}.instructions-text{color:#007AFF;font-size:14px;font-weight:600;text-align:center}.photo-score-overlay{position:absolute;top:0;right:0;width:280px;height:100%;background:rgba(0,0,0,0.9);backdrop-filter:blur(10px);border-left:1px solid rgba(255,255,255,0.1);padding:20px;display:flex;flex-direction:column;overflow-y:auto;z-index:10}.score-overlay-header{margin-bottom:20px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:15px}.score-overlay-title{font-size:20px;font-weight:700;color:#007AFF;margin-bottom:4px}.score-overlay-subtitle{font-size:12px;opacity:0.7;color:#fff}.score-overlay-main{margin-bottom:24px;text-align:center}.live-score-circle{position:relative;width:120px;height:120px;margin:0 auto 12px;border-radius:50%;background:linear-gradient(135deg,#007AFF 0%,#4CAF50 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,122,255,0.3)}.live-score-number{font-size:36px;font-weight:700;color:#fff;line-height:1}.live-score-label{font-size:14px;opacity:0.9;color:#fff;margin-top:4px}.score-quality-badge{padding:6px 12px;border-radius:20px;font-size:12px;font-weight:600;display:inline-block;background:rgba(255,255,255,0.1);color:#fff}.score-overlay-details{margin-bottom:20px}.score-detail-item{margin-bottom:16px}.score-detail-label{font-size:12px;opacity:0.8;margin-bottom:6px;display:flex;align-items:center;gap:6px}.score-detail-value{font-size:16px;font-weight:600;color:#007AFF;margin-bottom:6px}.score-detail-bar{width:100%;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden}.score-detail-bar-fill{height:100%;background:linear-gradient(90deg,#007AFF,#4CAF50);border-radius:3px;transition:width 0.3s ease}.score-overlay-tips{background:rgba(0,122,255,0.1);padding:12px;border-radius:8px;border:1px solid rgba(0,122,255,0.3)}.score-tips-title{font-size:13px;font-weight:600;color:#007AFF;margin-bottom:8px}.score-tips-content{font-size:12px;line-height:1.5;opacity:0.9;color:#fff}@media (max-width:768px){.header{padding:15px}.header h1{font-size:20px}.camera-container{height:300px}.capture-button{width:70px;height:70px}.capture-button-inner{width:50px;height:50px}.analysis-grid{grid-template-columns:1fr}.photo-score-overlay{width:240px;padding:15px}.live-score-circle{width:100px;height:100px}.live-score-number{font-size:30px}}
     </style>
 </head>
 <body>
@@ -21,11 +21,19 @@
                 <button class="header-btn" id="cameraModeBtn" title="Camera Mode">📷</button>
                 <button class="header-btn" id="uploadModeBtn" title="Upload Mode">📁</button>
                 <button class="header-btn" id="compositionBtn" title="Toggle Composition Overlay">⊞</button>
-                <button class="header-btn" id="examplesBtn" title="Perfect Score Examples">🏆</button>
             </div>
         </div>
 
         <div class="main-content">
+            <!-- Debug Info -->
+            <div id="debugInfo" class="debug-info">
+                <div style="color: #00FF00; font-family: monospace; font-size: 12px;">
+                    Debug: Camera Active: NO<br>
+                    Analysis Mode: camera<br>
+                    Uploaded Image: NO
+                </div>
+            </div>
+
             <!-- Instructions -->
             <div class="instructions-container">
                 <div class="instructions-text">
@@ -71,17 +79,72 @@
                         <div class="status-indicator"></div>
                         <div class="status-text">Camera Active</div>
                     </div>
+                    
+                    <!-- Real-time Photo Score Overlay -->
+                    <div id="photoScoreOverlay" class="photo-score-overlay" style="display: none;">
+                        <div class="score-overlay-header">
+                            <div class="score-overlay-title">📸 Live Score</div>
+                            <div class="score-overlay-subtitle">Real-time Analysis</div>
+                        </div>
+                        <div class="score-overlay-main">
+                            <div class="live-score-circle">
+                                <div class="live-score-number" id="liveScoreNumber">--</div>
+                                <div class="live-score-label">/ 100</div>
+                            </div>
+                            <div class="score-quality-badge" id="scoreQualityBadge">Analyzing...</div>
+                        </div>
+                        <div class="score-overlay-details">
+                            <div class="score-detail-item">
+                                <div class="score-detail-label">💡 Lighting</div>
+                                <div class="score-detail-value" id="liveLighting">--</div>
+                                <div class="score-detail-bar">
+                                    <div class="score-detail-bar-fill" id="liveLightingBar" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                            <div class="score-detail-item">
+                                <div class="score-detail-label">🎨 Composition</div>
+                                <div class="score-detail-value" id="liveComposition">--</div>
+                                <div class="score-detail-bar">
+                                    <div class="score-detail-bar-fill" id="liveCompositionBar" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                            <div class="score-detail-item">
+                                <div class="score-detail-label">✨ Brightness</div>
+                                <div class="score-detail-value" id="liveBrightness">--</div>
+                                <div class="score-detail-bar">
+                                    <div class="score-detail-bar-fill" id="liveBrightnessBar" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                            <div class="score-detail-item">
+                                <div class="score-detail-label">⚡ Contrast</div>
+                                <div class="score-detail-value" id="liveContrast">--</div>
+                                <div class="score-detail-bar">
+                                    <div class="score-detail-bar-fill" id="liveContrastBar" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                            <div class="score-detail-item">
+                                <div class="score-detail-label">🎯 Sharpness</div>
+                                <div class="score-detail-value" id="liveSharpness">--</div>
+                                <div class="score-detail-bar">
+                                    <div class="score-detail-bar-fill" id="liveSharpnessBar" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="score-overlay-tips">
+                            <div class="score-tips-title">💡 Quick Tips</div>
+                            <div class="score-tips-content" id="liveTips">Position your subject and wait for analysis...</div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="camera-controls">
-                    <button id="startCameraBtn" class="control-button">📷</button>
+                    <button id="startCameraBtn" class="control-button">📷 Start Camera</button>
                     <button id="captureBtn" class="capture-button">
                         <div class="capture-button-inner"></div>
                     </button>
-                    <button id="stopCameraBtn" class="control-button">⏹️</button>
-                    <button id="analyzeBtn" class="ai-button">✨ Analyze</button>
-                    <button id="analyzeLastPhotoBtn" class="ai-button" style="background: #4CAF50; display: none;">✨ Last Photo</button>
-                    <button id="enhanceBtn" class="enhance-button" style="display: none;">🎨 Auto Enhance</button>
+                    <button id="stopCameraBtn" class="control-button">⏹️ Stop</button>
+                    <button id="analyzeBtn" class="ai-button">✨ Analyze Scene</button>
+                    <button id="analyzeLastPhotoBtn" class="ai-button" style="background: #4CAF50; display: none;">✨ Analyze Last Photo</button>
                 </div>
             </div>
 
@@ -89,141 +152,6 @@
             <div id="analysisPanel" class="analysis-panel" style="display: none;">
                 <div class="analysis-title">📊 AI Photography Analysis</div>
                 <div id="analysisContent"></div>
-            </div>
-
-            <!-- Enhancement Panel -->
-            <div id="enhancementPanel" class="enhancement-panel">
-                <div class="analysis-title">🎨 AI Photo Enhancement</div>
-                <div class="enhancement-preview">
-                    <div>
-                        <img id="originalPreview" class="preview-image" alt="Original">
-                        <div class="preview-label">Original</div>
-                    </div>
-                    <div>
-                        <img id="enhancedPreview" class="preview-image" alt="Enhanced">
-                        <div class="preview-label">AI Enhanced</div>
-                    </div>
-                </div>
-                <button id="downloadEnhancedBtn" class="download-button" style="display: none;">📥 Download Enhanced Photo</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Perfect Score Examples Modal -->
-    <div id="examplesModal" class="examples-modal">
-        <div class="examples-modal-content">
-            <div class="examples-header">
-                <div class="examples-title">🏆 Perfect Score Examples (100/100)</div>
-                <button class="close-examples" onclick="closeExamples()">✕ Close</button>
-            </div>
-            <div class="examples-grid">
-                <div class="example-card">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center" class="example-image" alt="Perfect Landscape">
-                    <div class="example-content">
-                        <div class="example-score">
-                            <span class="score-badge">100/100</span>
-                            <span>Perfect Score</span>
-                        </div>
-                        <div class="example-title">Golden Hour Landscape</div>
-                        <div class="example-description">Perfect rule of thirds, golden hour lighting, balanced composition with foreground, midground, and background elements.</div>
-                        <div class="example-features">
-                            <span class="feature-tag">Rule of Thirds</span>
-                            <span class="feature-tag">Golden Hour</span>
-                            <span class="feature-tag">Depth</span>
-                            <span class="feature-tag">Balance</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="example-card">
-                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=300&fit=crop&crop=center" class="example-image" alt="Perfect Portrait">
-                    <div class="example-content">
-                        <div class="example-score">
-                            <span class="score-badge">100/100</span>
-                            <span>Perfect Score</span>
-                        </div>
-                        <div class="example-title">Professional Portrait</div>
-                        <div class="example-description">Perfect lighting, sharp focus, excellent bokeh background, proper eye contact, and professional composition.</div>
-                        <div class="example-features">
-                            <span class="feature-tag">Sharp Focus</span>
-                            <span class="feature-tag">Bokeh</span>
-                            <span class="feature-tag">Eye Contact</span>
-                            <span class="feature-tag">Professional</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="example-card">
-                    <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=400&h=300&fit=crop&crop=center" class="example-image" alt="Perfect Night Photography">
-                    <div class="example-content">
-                        <div class="example-score">
-                            <span class="score-badge">100/100</span>
-                            <span>Perfect Score</span>
-                        </div>
-                        <div class="example-title">Night Sky Photography</div>
-                        <div class="example-description">Perfect exposure for night photography, sharp stars, minimal noise, excellent composition with foreground elements.</div>
-                        <div class="example-features">
-                            <span class="feature-tag">Night Photography</span>
-                            <span class="feature-tag">Sharp Stars</span>
-                            <span class="feature-tag">Low Noise</span>
-                            <span class="feature-tag">Composition</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="example-card">
-                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop&crop=center" class="example-image" alt="Perfect Street Photography">
-                    <div class="example-content">
-                        <div class="example-score">
-                            <span class="score-badge">100/100</span>
-                            <span>Perfect Score</span>
-                        </div>
-                        <div class="example-title">Street Photography</div>
-                        <div class="example-description">Perfect timing, excellent contrast, sharp details, compelling subject, and strong compositional elements.</div>
-                        <div class="example-features">
-                            <span class="feature-tag">Perfect Timing</span>
-                            <span class="feature-tag">High Contrast</span>
-                            <span class="feature-tag">Sharp Details</span>
-                            <span class="feature-tag">Compelling</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="example-card">
-                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop&crop=center" class="example-image" alt="Perfect Nature Photography">
-                    <div class="example-content">
-                        <div class="example-score">
-                            <span class="score-badge">100/100</span>
-                            <span>Perfect Score</span>
-                        </div>
-                        <div class="example-title">Nature Macro Photography</div>
-                        <div class="example-description">Perfect macro focus, excellent color saturation, sharp details, beautiful natural lighting, and artistic composition.</div>
-                        <div class="example-features">
-                            <span class="feature-tag">Macro Focus</span>
-                            <span class="feature-tag">Rich Colors</span>
-                            <span class="feature-tag">Sharp Details</span>
-                            <span class="feature-tag">Natural Light</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="example-card">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop&crop=center" class="example-image" alt="Perfect Architecture">
-                    <div class="example-content">
-                        <div class="example-score">
-                            <span class="score-badge">100/100</span>
-                            <span>Perfect Score</span>
-                        </div>
-                        <div class="example-title">Architecture Photography</div>
-                        <div class="example-description">Perfect symmetry, excellent lines and geometry, ideal lighting conditions, sharp details, and strong visual impact.</div>
-                        <div class="example-features">
-                            <span class="feature-tag">Perfect Symmetry</span>
-                            <span class="feature-tag">Clean Lines</span>
-                            <span class="feature-tag">Ideal Lighting</span>
-                            <span class="feature-tag">Visual Impact</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -234,7 +162,6 @@
         let uploadedImageData = null;
         let capturedPhotoData = null;
         let capturedPhotoUrl = null;
-        let currentImageForEnhancement = null;
 
         const videoElement = document.getElementById('videoElement');
         const cameraPlaceholder = document.getElementById('cameraPlaceholder');
@@ -245,15 +172,28 @@
         const analysisPanel = document.getElementById('analysisPanel');
         const analysisContent = document.getElementById('analysisContent');
         const analyzeLastPhotoBtn = document.getElementById('analyzeLastPhotoBtn');
-        const enhanceBtn = document.getElementById('enhanceBtn');
-        const enhancementPanel = document.getElementById('enhancementPanel');
-        const originalPreview = document.getElementById('originalPreview');
-        const enhancedPreview = document.getElementById('enhancedPreview');
-        const downloadEnhancedBtn = document.getElementById('downloadEnhancedBtn');
-        const examplesModal = document.getElementById('examplesModal');
+        const photoScoreOverlay = document.getElementById('photoScoreOverlay');
+        
+        let realTimeAnalysisInterval = null;
+        let isAnalyzing = false;
+
+        function updateDebugInfo() {
+            const debugInfo = document.getElementById('debugInfo');
+            if (debugInfo) {
+                debugInfo.innerHTML = `
+                    <div style="color: #00FF00; font-family: monospace; font-size: 12px;">
+                        Debug: Camera Active: ${cameraActive ? 'YES' : 'NO'}<br>
+                        Analysis Mode: ${currentMode}<br>
+                        Uploaded Image: ${uploadedImageData ? 'YES' : 'NO'}<br>
+                        Captured Photo: ${capturedPhotoData ? 'YES' : 'NO'}
+                    </div>
+                `;
+            }
+        }
 
         function setMode(mode) {
             currentMode = mode;
+            updateDebugInfo();
             
             if (mode === 'camera') {
                 cameraPlaceholder.style.display = 'flex';
@@ -262,7 +202,7 @@
                 document.getElementById('startCameraBtn').style.display = 'flex';
                 document.getElementById('captureBtn').style.display = 'flex';
                 document.getElementById('stopCameraBtn').style.display = 'flex';
-                document.getElementById('analyzeBtn').textContent = '✨ Analyze';
+                document.getElementById('analyzeBtn').textContent = '✨ Analyze Scene';
             } else {
                 cameraPlaceholder.style.display = 'none';
                 uploadPlaceholder.style.display = 'flex';
@@ -270,26 +210,9 @@
                 document.getElementById('startCameraBtn').style.display = 'none';
                 document.getElementById('captureBtn').style.display = 'none';
                 document.getElementById('stopCameraBtn').style.display = 'none';
-                document.getElementById('analyzeBtn').textContent = '✨ Analyze';
+                document.getElementById('analyzeBtn').textContent = '✨ Analyze Image';
             }
         }
-
-        function showExamples() {
-            examplesModal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeExamples() {
-            examplesModal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close modal when clicking outside
-        examplesModal.addEventListener('click', (e) => {
-            if (e.target === examplesModal) {
-                closeExamples();
-            }
-        });
 
         async function startCamera() {
             try {
@@ -308,7 +231,12 @@
                 cameraStatus.style.display = 'flex';
                 cameraActive = true;
                 
+                // Show and start real-time overlay
+                photoScoreOverlay.style.display = 'flex';
+                startRealTimeAnalysis();
+                
                 console.log('✅ Camera started successfully');
+                updateDebugInfo();
                 
             } catch (error) {
                 console.error('❌ Camera error:', error);
@@ -325,6 +253,12 @@
             cameraPlaceholder.style.display = 'flex';
             cameraStatus.style.display = 'none';
             cameraActive = false;
+            
+            // Hide and stop real-time overlay
+            photoScoreOverlay.style.display = 'none';
+            stopRealTimeAnalysis();
+            
+            updateDebugInfo();
         }
 
         function capturePhoto() {
@@ -351,10 +285,10 @@
                     a.click();
                     
                     analyzeLastPhotoBtn.style.display = 'flex';
-                    enhanceBtn.style.display = 'flex';
+                    updateDebugInfo();
                     
                     console.log('📸 Photo captured and saved!');
-                    alert('Photo captured! Click "Last Photo" for detailed analysis or "Auto Enhance" for AI improvements.');
+                    alert('Photo captured! Click "Analyze Last Photo" for detailed analysis.');
                 }
             }, 'image/jpeg', 0.9);
         }
@@ -368,7 +302,7 @@
                     document.getElementById('uploadedImage').src = uploadedImageData;
                     uploadPlaceholder.style.display = 'none';
                     uploadedImageContainer.style.display = 'block';
-                    enhanceBtn.style.display = 'flex';
+                    updateDebugInfo();
                 };
                 reader.readAsDataURL(file);
             }
@@ -378,12 +312,559 @@
             uploadedImageData = null;
             uploadPlaceholder.style.display = 'flex';
             uploadedImageContainer.style.display = 'none';
-            enhanceBtn.style.display = 'none';
+            updateDebugInfo();
         }
 
         function toggleComposition() {
             const isVisible = compositionOverlay.style.display !== 'none';
             compositionOverlay.style.display = isVisible ? 'none' : 'block';
+        }
+
+        // Advanced photography analysis functions
+        function analyzeHistogram(imageData) {
+            const data = imageData.data;
+            const histogram = {
+                r: new Array(256).fill(0),
+                g: new Array(256).fill(0),
+                b: new Array(256).fill(0),
+                luminance: new Array(256).fill(0)
+            };
+            
+            for (let i = 0; i < data.length; i += 16) {
+                const r = data[i];
+                const g = data[i + 1];
+                const b = data[i + 2];
+                const luminance = Math.round(0.299 * r + 0.587 * g + 0.114 * b);
+                
+                histogram.r[r]++;
+                histogram.g[g]++;
+                histogram.b[b]++;
+                histogram.luminance[luminance]++;
+            }
+            
+            // Find peaks and valleys
+            let maxLum = 0, minLum = 255;
+            let totalLum = 0, lumCount = 0;
+            for (let i = 0; i < 256; i++) {
+                if (histogram.luminance[i] > 0) {
+                    if (i < minLum) minLum = i;
+                    if (i > maxLum) maxLum = i;
+                    totalLum += i * histogram.luminance[i];
+                    lumCount += histogram.luminance[i];
+                }
+            }
+            
+            const avgLuminance = lumCount > 0 ? totalLum / lumCount : 128;
+            const dynamicRange = maxLum - minLum;
+            
+            // Check for clipping (over/under exposure)
+            const shadowClipping = histogram.luminance.slice(0, 5).reduce((a, b) => a + b, 0);
+            const highlightClipping = histogram.luminance.slice(250, 256).reduce((a, b) => a + b, 0);
+            const totalPixels = lumCount;
+            const shadowClipPercent = (shadowClipping / totalPixels) * 100;
+            const highlightClipPercent = (highlightClipping / totalPixels) * 100;
+            
+            return {
+                histogram,
+                avgLuminance,
+                dynamicRange,
+                shadowClipPercent,
+                highlightClipPercent,
+                minLum,
+                maxLum
+            };
+        }
+
+        function analyzeSharpness(imageData) {
+            const data = imageData.data;
+            const width = imageData.width;
+            const height = imageData.height;
+            
+            let edgeStrength = 0;
+            let edgeCount = 0;
+            
+            // Sobel edge detection (simplified for performance)
+            for (let y = 1; y < height - 1; y += 2) {
+                for (let x = 1; x < width - 1; x += 2) {
+                    const idx = (y * width + x) * 4;
+                    const idxRight = (y * width + (x + 1)) * 4;
+                    const idxBottom = ((y + 1) * width + x) * 4;
+                    
+                    const lum1 = 0.299 * data[idx] + 0.587 * data[idx + 1] + 0.114 * data[idx + 2];
+                    const lum2 = 0.299 * data[idxRight] + 0.587 * data[idxRight + 1] + 0.114 * data[idxRight + 2];
+                    const lum3 = 0.299 * data[idxBottom] + 0.587 * data[idxBottom + 1] + 0.114 * data[idxBottom + 2];
+                    
+                    const edgeX = Math.abs(lum1 - lum2);
+                    const edgeY = Math.abs(lum1 - lum3);
+                    const edge = Math.sqrt(edgeX * edgeX + edgeY * edgeY);
+                    
+                    if (edge > 15) { // Threshold for edge detection
+                        edgeStrength += edge;
+                        edgeCount++;
+                    }
+                }
+            }
+            
+            const avgEdgeStrength = edgeCount > 0 ? edgeStrength / edgeCount : 0;
+            const sharpnessScore = Math.min(100, Math.round((avgEdgeStrength / 50) * 100));
+            
+            return {
+                sharpnessScore,
+                avgEdgeStrength,
+                edgeCount
+            };
+        }
+
+        function analyzeComposition(imageData, width, height) {
+            const data = imageData.data;
+            const thirdWidth = width / 3;
+            const thirdHeight = height / 3;
+            
+            // Rule of thirds: Analyze interest points at intersection lines
+            const intersections = [
+                { x: thirdWidth, y: thirdHeight },
+                { x: thirdWidth * 2, y: thirdHeight },
+                { x: thirdWidth, y: thirdHeight * 2 },
+                { x: thirdWidth * 2, y: thirdHeight * 2 }
+            ];
+            
+            // Calculate visual weight at rule-of-thirds intersections
+            let intersectionInterest = 0;
+            const radius = 20;
+            
+            intersections.forEach(point => {
+                let totalContrast = 0;
+                let samples = 0;
+                
+                for (let dy = -radius; dy <= radius; dy += 4) {
+                    for (let dx = -radius; dx <= radius; dx += 4) {
+                        const x = Math.round(point.x + dx);
+                        const y = Math.round(point.y + dy);
+                        
+                        if (x >= 0 && x < width && y >= 0 && y < height) {
+                            const idx = (y * width + x) * 4;
+                            const idxRight = (y * width + Math.min(width - 1, x + 1)) * 4;
+                            const idxBottom = ((Math.min(height - 1, y + 1)) * width + x) * 4;
+                            
+                            const lum1 = 0.299 * data[idx] + 0.587 * data[idx + 1] + 0.114 * data[idx + 2];
+                            const lum2 = 0.299 * data[idxRight] + 0.587 * data[idxRight + 1] + 0.114 * data[idxRight + 2];
+                            const lum3 = 0.299 * data[idxBottom] + 0.587 * data[idxBottom + 1] + 0.114 * data[idxBottom + 2];
+                            
+                            totalContrast += Math.abs(lum1 - lum2) + Math.abs(lum1 - lum3);
+                            samples++;
+                        }
+                    }
+                }
+                
+                if (samples > 0) {
+                    intersectionInterest += totalContrast / samples;
+                }
+            });
+            
+            intersectionInterest /= intersections.length;
+            
+            // Horizon detection (for landscape photos)
+            let horizontalSymmetry = 0;
+            if (width > height * 1.2) { // Landscape orientation
+                const midY = Math.floor(height / 2);
+                let topAvg = 0, bottomAvg = 0, topCount = 0, bottomCount = 0;
+                
+                for (let y = 0; y < height; y += 2) {
+                    for (let x = 0; x < width; x += 2) {
+                        const idx = (y * width + x) * 4;
+                        const lum = 0.299 * data[idx] + 0.587 * data[idx + 1] + 0.114 * data[idx + 2];
+                        
+                        if (y < midY) {
+                            topAvg += lum;
+                            topCount++;
+                        } else {
+                            bottomAvg += lum;
+                            bottomCount++;
+                        }
+                    }
+                }
+                
+                if (topCount > 0 && bottomCount > 0) {
+                    topAvg /= topCount;
+                    bottomAvg /= bottomCount;
+                    horizontalSymmetry = 100 - Math.abs(topAvg - bottomAvg) / 2.55;
+                }
+            }
+            
+            // Subject-background separation (center vs edges)
+            const centerX = width / 2;
+            const centerY = height / 2;
+            const centerRadius = Math.min(width, height) * 0.3;
+            
+            let centerBrightness = 0, edgeBrightness = 0;
+            let centerCount = 0, edgeCount = 0;
+            
+            for (let y = 0; y < height; y += 3) {
+                for (let x = 0; x < width; x += 3) {
+                    const idx = (y * width + x) * 4;
+                    const lum = 0.299 * data[idx] + 0.587 * data[idx + 1] + 0.114 * data[idx + 2];
+                    const dist = Math.sqrt((x - centerX) ** 2 + (y - centerY) ** 2);
+                    
+                    if (dist < centerRadius) {
+                        centerBrightness += lum;
+                        centerCount++;
+                    } else if (dist > centerRadius * 2) {
+                        edgeBrightness += lum;
+                        edgeCount++;
+                    }
+                }
+            }
+            
+            let separation = 0;
+            if (centerCount > 0 && edgeCount > 0) {
+                centerBrightness /= centerCount;
+                edgeBrightness /= edgeCount;
+                separation = Math.min(100, Math.abs(centerBrightness - edgeBrightness) / 2.55);
+            }
+            
+            // Calculate composition score
+            let compositionScore = 60;
+            
+            // Rule of thirds bonus
+            if (intersectionInterest > 25) {
+                compositionScore += 15;
+            }
+            
+            // Horizon level bonus
+            if (horizontalSymmetry > 85) {
+                compositionScore += 10;
+            }
+            
+            // Subject-background separation
+            if (separation > 20) {
+                compositionScore += 15;
+            }
+            
+            compositionScore = Math.min(100, compositionScore);
+            
+            return {
+                compositionScore,
+                ruleOfThirds: intersectionInterest > 20,
+                horizonLevel: horizontalSymmetry > 85,
+                subjectSeparation: separation > 15,
+                separation
+            };
+        }
+
+        function analyzeColor(imageData) {
+            const data = imageData.data;
+            let totalHue = 0, totalSaturation = 0, totalValue = 0;
+            let pixelCount = 0;
+            
+            // Analyze color distribution
+            const colorZones = {
+                red: 0, orange: 0, yellow: 0, green: 0, blue: 0, purple: 0
+            };
+            
+            for (let i = 0; i < data.length; i += 16) {
+                const r = data[i] / 255;
+                const g = data[i + 1] / 255;
+                const b = data[i + 2] / 255;
+                
+                const max = Math.max(r, g, b);
+                const min = Math.min(r, g, b);
+                const delta = max - min;
+                
+                let hue = 0;
+                if (delta !== 0) {
+                    if (max === r) {
+                        hue = ((g - b) / delta) % 6;
+                    } else if (max === g) {
+                        hue = (b - r) / delta + 2;
+                    } else {
+                        hue = (r - g) / delta + 4;
+                    }
+                    hue *= 60;
+                    if (hue < 0) hue += 360;
+                }
+                
+                const saturation = max === 0 ? 0 : delta / max;
+                const value = max;
+                
+                totalHue += hue;
+                totalSaturation += saturation;
+                totalValue += value;
+                pixelCount++;
+                
+                // Color zone classification
+                if (hue >= 0 && hue < 30) colorZones.red++;
+                else if (hue >= 30 && hue < 60) colorZones.orange++;
+                else if (hue >= 60 && hue < 90) colorZones.yellow++;
+                else if (hue >= 90 && hue < 150) colorZones.green++;
+                else if (hue >= 150 && hue < 270) colorZones.blue++;
+                else colorZones.purple++;
+            }
+            
+            const avgHue = totalHue / pixelCount;
+            const avgSaturation = (totalSaturation / pixelCount) * 100;
+            const avgValue = (totalValue / pixelCount) * 100;
+            
+            // Calculate color harmony score
+            const dominantColor = Object.entries(colorZones).reduce((a, b) => 
+                colorZones[a[0]] > colorZones[b[0]] ? a : b
+            )[0];
+            
+            // Saturation score (good photos often have balanced saturation)
+            let saturationScore = 70;
+            if (avgSaturation > 40 && avgSaturation < 80) {
+                saturationScore = 90;
+            } else if (avgSaturation < 20) {
+                saturationScore = 50; // Too desaturated
+            } else if (avgSaturation > 90) {
+                saturationScore = 60; // Oversaturated
+            }
+            
+            return {
+                avgSaturation,
+                saturationScore,
+                colorBalance: avgSaturation > 30 && avgSaturation < 85,
+                dominantColor
+            };
+        }
+
+        function analyzeVideoFrame() {
+            if (!cameraActive || !videoElement.srcObject || videoElement.readyState !== videoElement.HAVE_ENOUGH_DATA) {
+                return null;
+            }
+
+            try {
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                
+                // Use optimized resolution for analysis
+                const scale = 0.4;
+                canvas.width = Math.floor(videoElement.videoWidth * scale);
+                canvas.height = Math.floor(videoElement.videoHeight * scale);
+                
+                context.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+                
+                const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+                const data = imageData.data;
+                
+                // 1. HISTOGRAM ANALYSIS
+                const histAnalysis = analyzeHistogram(imageData);
+                
+                // 2. SHARPNESS/FOCUS ANALYSIS
+                const sharpness = analyzeSharpness(imageData);
+                
+                // 3. COMPOSITION ANALYSIS
+                const composition = analyzeComposition(imageData, canvas.width, canvas.height);
+                
+                // 4. COLOR ANALYSIS
+                const color = analyzeColor(imageData);
+                
+                // Calculate detailed scores
+                
+                // LIGHTING SCORE (based on histogram and exposure)
+                let lightingScore = 70;
+                let lightingQuality = 'Good';
+                
+                if (histAnalysis.shadowClipPercent > 5 || histAnalysis.highlightClipPercent > 5) {
+                    lightingScore = 50;
+                    lightingQuality = 'Clipping Detected';
+                } else if (histAnalysis.dynamicRange < 100) {
+                    lightingScore = 60;
+                    lightingQuality = 'Low Dynamic Range';
+                } else if (histAnalysis.avgLuminance < 70) {
+                    lightingScore = 50;
+                    lightingQuality = 'Under-exposed';
+                } else if (histAnalysis.avgLuminance > 200) {
+                    lightingScore = 65;
+                    lightingQuality = 'Over-exposed';
+                } else if (histAnalysis.avgLuminance >= 100 && histAnalysis.avgLuminance <= 180 && histAnalysis.dynamicRange > 150) {
+                    lightingScore = 90;
+                    lightingQuality = 'Excellent';
+                } else if (histAnalysis.avgLuminance >= 80 && histAnalysis.avgLuminance <= 200) {
+                    lightingScore = 80;
+                    lightingQuality = 'Good';
+                }
+                
+                // BRIGHTNESS SCORE (based on histogram)
+                let brightnessScore = 70;
+                const optimalBrightness = 128;
+                const brightnessDiff = Math.abs(histAnalysis.avgLuminance - optimalBrightness);
+                brightnessScore = Math.max(0, Math.min(100, 100 - (brightnessDiff / 127) * 30));
+                
+                // CONTRAST SCORE (based on dynamic range and histogram spread)
+                let contrastScore = 70;
+                if (histAnalysis.dynamicRange > 180) {
+                    contrastScore = 90;
+                } else if (histAnalysis.dynamicRange > 140) {
+                    contrastScore = 80;
+                } else if (histAnalysis.dynamicRange > 100) {
+                    contrastScore = 70;
+                } else if (histAnalysis.dynamicRange > 60) {
+                    contrastScore = 55;
+                } else {
+                    contrastScore = 40;
+                }
+                
+                // TECHNICAL QUALITY SCORE (sharpness + color)
+                const technicalScore = Math.round((sharpness.sharpnessScore * 0.6) + (color.saturationScore * 0.4));
+                
+                // Overall score using professional photography weights
+                const overallScore = Math.round(
+                    (lightingScore * 0.25) +      // Lighting is crucial
+                    (composition.compositionScore * 0.25) +  // Composition is crucial
+                    (brightnessScore * 0.15) +   // Proper exposure
+                    (contrastScore * 0.15) +     // Contrast for visual interest
+                    (technicalScore * 0.2)      // Technical quality (sharpness, color)
+                );
+                
+                // Determine quality badge
+                let qualityBadge = 'Good';
+                if (overallScore >= 85) qualityBadge = 'Excellent';
+                else if (overallScore >= 70) qualityBadge = 'Good';
+                else if (overallScore >= 55) qualityBadge = 'Fair';
+                else qualityBadge = 'Needs Work';
+                
+                // Generate contextual tips based on analysis
+                const tips = [];
+                
+                if (histAnalysis.shadowClipPercent > 5) {
+                    tips.push('🔦 Increase exposure - shadows are clipped');
+                } else if (histAnalysis.highlightClipPercent > 5) {
+                    tips.push('☀️ Reduce exposure - highlights are blown');
+                } else if (histAnalysis.avgLuminance < 70) {
+                    tips.push('💡 Increase brightness or add light');
+                } else if (histAnalysis.avgLuminance > 200) {
+                    tips.push('🌅 Reduce exposure or dim lights');
+                }
+                
+                if (contrastScore < 60) {
+                    tips.push('⚡ Improve contrast - more dynamic range needed');
+                }
+                
+                if (sharpness.sharpnessScore < 60) {
+                    tips.push('🎯 Focus on your subject - image appears soft');
+                }
+                
+                if (!composition.ruleOfThirds && composition.compositionScore < 70) {
+                    tips.push('📐 Apply rule of thirds - position subject at intersection');
+                }
+                
+                if (!composition.subjectSeparation && composition.separation < 15) {
+                    tips.push('🎨 Separate subject from background');
+                }
+                
+                if (!color.colorBalance) {
+                    if (color.avgSaturation < 30) {
+                        tips.push('🌈 Increase color saturation');
+                    } else {
+                        tips.push('🎨 Reduce saturation - colors look oversaturated');
+                    }
+                }
+                
+                if (tips.length === 0) {
+                    tips.push('✨ Excellent! Ready to capture the perfect shot');
+                }
+                
+                return {
+                    overallScore,
+                    qualityBadge,
+                    lightingScore,
+                    lightingQuality,
+                    compositionScore: composition.compositionScore,
+                    brightnessScore,
+                    contrastScore,
+                    technicalScore,
+                    sharpness: sharpness.sharpnessScore,
+                    colorScore: color.saturationScore,
+                    tips: tips[0],
+                    // Additional insights for detailed view
+                    insights: {
+                        dynamicRange: histAnalysis.dynamicRange,
+                        ruleOfThirds: composition.ruleOfThirds,
+                        sharp: sharpness.sharpnessScore > 70,
+                        colorHarmony: color.colorBalance
+                    }
+                };
+                
+            } catch (error) {
+                console.error('Frame analysis error:', error);
+                return null;
+            }
+        }
+
+        function updateLiveOverlay(analysis) {
+            if (!analysis) return;
+            
+            // Update score
+            document.getElementById('liveScoreNumber').textContent = analysis.overallScore;
+            
+            // Update quality badge
+            const badge = document.getElementById('scoreQualityBadge');
+            badge.textContent = analysis.qualityBadge;
+            if (analysis.overallScore >= 85) {
+                badge.style.background = 'rgba(76, 175, 80, 0.3)';
+                badge.style.color = '#4CAF50';
+            } else if (analysis.overallScore >= 70) {
+                badge.style.background = 'rgba(0, 122, 255, 0.3)';
+                badge.style.color = '#007AFF';
+            } else if (analysis.overallScore >= 55) {
+                badge.style.background = 'rgba(255, 152, 0, 0.3)';
+                badge.style.color = '#FF9800';
+            } else {
+                badge.style.background = 'rgba(244, 67, 54, 0.3)';
+                badge.style.color = '#F44336';
+            }
+            
+            // Update detail values and bars
+            document.getElementById('liveLighting').textContent = analysis.lightingQuality;
+            document.getElementById('liveLightingBar').style.width = `${analysis.lightingScore}%`;
+            
+            document.getElementById('liveComposition').textContent = `${analysis.compositionScore}/100`;
+            document.getElementById('liveCompositionBar').style.width = `${analysis.compositionScore}%`;
+            
+            document.getElementById('liveBrightness').textContent = `${analysis.brightnessScore}/100`;
+            document.getElementById('liveBrightnessBar').style.width = `${analysis.brightnessScore}%`;
+            
+            document.getElementById('liveContrast').textContent = `${analysis.contrastScore}/100`;
+            document.getElementById('liveContrastBar').style.width = `${analysis.contrastScore}%`;
+            
+            // Update sharpness if available
+            if (analysis.sharpness !== undefined) {
+                document.getElementById('liveSharpness').textContent = `${analysis.sharpness}/100`;
+                document.getElementById('liveSharpnessBar').style.width = `${analysis.sharpness}%`;
+            } else {
+                document.getElementById('liveSharpness').textContent = '--';
+                document.getElementById('liveSharpnessBar').style.width = '0%';
+            }
+            
+            // Update tips
+            document.getElementById('liveTips').textContent = analysis.tips;
+        }
+
+        function startRealTimeAnalysis() {
+            // Wait for video to be ready
+            if (realTimeAnalysisInterval) {
+                clearInterval(realTimeAnalysisInterval);
+            }
+            
+            // Initial delay to let video start
+            setTimeout(() => {
+                // Analyze every 500ms for smooth updates
+                realTimeAnalysisInterval = setInterval(() => {
+                    if (cameraActive && videoElement.srcObject) {
+                        const analysis = analyzeVideoFrame();
+                        if (analysis) {
+                            updateLiveOverlay(analysis);
+                        }
+                    }
+                }, 500);
+            }, 1000);
+        }
+
+        function stopRealTimeAnalysis() {
+            if (realTimeAnalysisInterval) {
+                clearInterval(realTimeAnalysisInterval);
+                realTimeAnalysisInterval = null;
+            }
         }
 
         async function analyzeImageProperties(imageBlob) {
@@ -402,10 +883,7 @@
                     
                     let totalBrightness = 0;
                     let totalRed = 0, totalGreen = 0, totalBlue = 0;
-                    let darkPixels = 0, brightPixels = 0;
-                    let edgePixels = 0;
                     
-                    // Advanced analysis
                     for (let i = 0; i < data.length; i += 4) {
                         const r = data[i];
                         const g = data[i + 1];
@@ -416,15 +894,6 @@
                         totalRed += r;
                         totalGreen += g;
                         totalBlue += b;
-                        
-                        if (brightness < 85) darkPixels++;
-                        if (brightness > 170) brightPixels++;
-                        
-                        // Edge detection for sharpness
-                        if (i > 0 && i < data.length - 4) {
-                            const prevBrightness = (data[i-4] + data[i-3] + data[i-2]) / 3;
-                            if (Math.abs(brightness - prevBrightness) > 30) edgePixels++;
-                        }
                     }
                     
                     const pixelCount = data.length / 4;
@@ -433,203 +902,94 @@
                     const avgGreen = totalGreen / pixelCount;
                     const avgBlue = totalBlue / pixelCount;
                     
-                    // Calculate advanced metrics
                     let contrastSum = 0;
-                    let colorVariance = 0;
-                    
                     for (let i = 0; i < data.length; i += 4) {
                         const brightness = (data[i] + data[i + 1] + data[i + 2]) / 3;
                         contrastSum += Math.abs(brightness - avgBrightness);
-                        
-                        const colorDistance = Math.sqrt(
-                            Math.pow(data[i] - avgRed, 2) + 
-                            Math.pow(data[i + 1] - avgGreen, 2) + 
-                            Math.pow(data[i + 2] - avgBlue, 2)
-                        );
-                        colorVariance += colorDistance;
                     }
-                    
                     const contrast = contrastSum / pixelCount;
-                    const colorDiversity = colorVariance / pixelCount;
-                    const sharpness = (edgePixels / pixelCount) * 100;
-                    const exposureBalance = Math.abs(avgBrightness - 128) / 128;
                     
-                    // Advanced lighting analysis
                     let lightingCondition = 'Balanced lighting';
                     let lightingQuality = 'Good';
                     let colorTemperature = 'Daylight (5500K)';
-                    let lightingScore = 80;
                     
-                    if (avgBrightness < 80) {
-                        lightingCondition = 'Very low light conditions';
-                        lightingQuality = 'Poor - needs significant improvement';
-                        colorTemperature = 'Warm (3000K)';
-                        lightingScore = 30;
-                    } else if (avgBrightness < 120) {
+                    if (avgBrightness < 100) {
                         lightingCondition = 'Low light conditions';
-                        lightingQuality = 'Fair - could be improved';
-                        colorTemperature = 'Warm (4000K)';
-                        lightingScore = 60;
-                    } else if (avgBrightness > 220) {
-                        lightingCondition = 'Overexposed/bright conditions';
-                        lightingQuality = 'Poor - too bright';
+                        lightingQuality = 'Needs improvement';
+                        colorTemperature = 'Warm (3000K)';
+                    } else if (avgBrightness > 200) {
+                        lightingCondition = 'Bright/overexposed';
+                        lightingQuality = 'Too bright';
                         colorTemperature = 'Cool (6500K)';
-                        lightingScore = 40;
-                    } else if (avgBrightness > 180) {
-                        lightingCondition = 'Bright conditions';
-                        lightingQuality = 'Good but bright';
-                        colorTemperature = 'Cool (6000K)';
-                        lightingScore = 70;
                     }
                     
-                    // Advanced composition analysis
                     const aspectRatio = img.width / img.height;
                     let compositionScore = 70;
                     let hasDepth = true;
-                    let framingScore = 75;
-                    let balanceScore = 70;
-                    let symmetryScore = 60;
-                    let ruleOfThirdsScore = 50;
                     
-                    // Aspect ratio analysis
-                    if (aspectRatio > 2.0 || aspectRatio < 0.5) {
-                        compositionScore -= 15; // Very wide or tall
-                    } else if (aspectRatio > 1.5 || aspectRatio < 0.7) {
-                        compositionScore -= 10; // Wide or tall
+                    if (aspectRatio > 1.5 || aspectRatio < 0.7) {
+                        compositionScore -= 10;
                     }
                     
-                    // Contrast and depth analysis
-                    if (contrast < 20) {
-                        compositionScore -= 20; // Very low contrast
+                    if (contrast < 30) {
+                        compositionScore -= 15;
                         hasDepth = false;
-                    } else if (contrast < 30) {
-                        compositionScore -= 15; // Low contrast
-                        hasDepth = false;
-                    } else if (contrast > 60) {
-                        compositionScore += 10; // High contrast
                     }
                     
-                    // Color analysis
-                    if (colorDiversity > 50) {
-                        compositionScore += 5; // Good color diversity
-                    }
-                    
-                    // Sharpness analysis
-                    if (sharpness > 15) {
-                        compositionScore += 10; // Very sharp
-                    } else if (sharpness > 10) {
-                        compositionScore += 5; // Sharp
-                    } else if (sharpness < 5) {
-                        compositionScore -= 10; // Blurry
-                    }
-                    
-                    // Exposure analysis
-                    if (exposureBalance < 0.1) {
-                        compositionScore += 10; // Well exposed
-                    } else if (exposureBalance > 0.3) {
-                        compositionScore -= 15; // Poorly exposed
-                    }
-                    
-                    // Genre detection with more accuracy
                     let detectedGenre = 'General Photography';
-                    let genreConfidence = 60;
-                    
-                    if (avgBrightness > 180 && contrast > 50 && sharpness > 10) {
+                    if (avgBrightness > 180 && contrast > 50) {
                         detectedGenre = 'Portrait Photography';
-                        genreConfidence = 85;
-                    } else if (aspectRatio > 1.3 && colorDiversity > 40) {
+                    } else if (aspectRatio > 1.3) {
                         detectedGenre = 'Landscape Photography';
-                        genreConfidence = 80;
-                    } else if (avgBrightness < 120 && contrast < 40) {
+                    } else if (avgBrightness < 120) {
                         detectedGenre = 'Low Light Photography';
-                        genreConfidence = 75;
-                    } else if (sharpness > 15 && contrast > 60) {
-                        detectedGenre = 'Street Photography';
-                        genreConfidence = 70;
-                    } else if (colorDiversity > 60 && avgBrightness > 150) {
-                        detectedGenre = 'Nature Photography';
-                        genreConfidence = 75;
                     }
                     
-                    // Generate comprehensive recommendations
                     const recommendations = [];
                     const specificTips = [];
-                    const professionalTips = [];
                     
-                    // Technical recommendations
                     if (avgBrightness < 100) {
-                        recommendations.push('Increase exposure by 1-2 stops');
+                        recommendations.push('Increase exposure');
                         specificTips.push('Try increasing camera exposure or using flash');
-                        professionalTips.push('Consider using a faster lens (f/1.4-f/2.8) or increasing ISO');
                     }
                     if (contrast < 30) {
-                        recommendations.push('Improve contrast in post-processing');
+                        recommendations.push('Improve contrast');
                         specificTips.push('Adjust lighting or post-processing contrast');
-                        professionalTips.push('Use graduated filters or HDR techniques');
-                    }
-                    if (sharpness < 8) {
-                        recommendations.push('Improve focus and sharpness');
-                        specificTips.push('Check focus settings and camera stability');
-                        professionalTips.push('Use tripod, faster shutter speed, or image stabilization');
                     }
                     if (compositionScore < 70) {
                         recommendations.push('Improve composition');
                         specificTips.push('Use rule of thirds, try different angles');
-                        professionalTips.push('Consider leading lines, framing, and negative space');
                     }
-                    if (exposureBalance > 0.2) {
-                        recommendations.push('Adjust exposure settings');
-                        specificTips.push('Use exposure compensation');
-                        professionalTips.push('Use spot metering for better exposure control');
-                    }
-                    
-                    // Positive feedback
                     if (recommendations.length === 0) {
-                        recommendations.push('Excellent technical quality');
+                        recommendations.push('Good technical quality');
                         specificTips.push('Try different compositions for variety');
-                        professionalTips.push('Consider experimenting with different lighting conditions');
                     }
-                    
-                    // Calculate comprehensive overall score
-                    const technicalScore = Math.min(100, 
-                        (lightingScore * 0.3) + 
-                        (Math.min(100, contrast * 2) * 0.2) + 
-                        (Math.min(100, sharpness * 5) * 0.2) + 
-                        (Math.max(0, 100 - exposureBalance * 200) * 0.3)
-                    );
                     
                     const overallScore = Math.round(
-                        (technicalScore * 0.4) + 
-                        (compositionScore * 0.4) + 
-                        (genreConfidence * 0.2)
+                        compositionScore + 
+                        (lightingQuality === 'Good' ? 20 : 10) + 
+                        (contrast > 40 ? 10 : 0) + 
+                        (avgBrightness > 100 && avgBrightness < 200 ? 10 : 0)
                     );
                     
-                    // Determine quality level
                     let overallQuality = 'Good';
-                    if (overallScore >= 90) overallQuality = 'Exceptional';
-                    else if (overallScore >= 80) overallQuality = 'Excellent';
+                    if (overallScore >= 85) overallQuality = 'Excellent';
                     else if (overallScore >= 70) overallQuality = 'Good';
-                    else if (overallScore >= 60) overallQuality = 'Fair';
-                    else if (overallScore >= 50) overallQuality = 'Needs Improvement';
-                    else overallQuality = 'Poor';
+                    else if (overallScore >= 55) overallQuality = 'Fair';
+                    else overallQuality = 'Needs Improvement';
                     
-                    // Generate comprehensive strengths and improvements
                     const strengths = [];
                     const improvements = [];
                     
-                    if (overallScore >= 85) strengths.push('Exceptional technical quality');
-                    if (contrast > 40) strengths.push('Good contrast and dynamic range');
+                    if (overallScore >= 80) strengths.push('Excellent technical quality');
+                    if (contrast > 40) strengths.push('Good contrast');
                     if (avgBrightness > 100 && avgBrightness < 200) strengths.push('Proper exposure');
-                    if (compositionScore > 80) strengths.push('Excellent composition');
-                    if (sharpness > 12) strengths.push('Sharp and detailed');
-                    if (colorDiversity > 50) strengths.push('Rich color palette');
+                    if (compositionScore > 75) strengths.push('Good composition');
                     
-                    if (overallScore < 70) improvements.push('Improve overall technical quality');
-                    if (contrast < 30) improvements.push('Increase contrast and dynamic range');
-                    if (avgBrightness < 100) improvements.push('Better lighting and exposure needed');
-                    if (compositionScore < 70) improvements.push('Work on composition and framing');
-                    if (sharpness < 8) improvements.push('Improve focus and sharpness');
-                    if (exposureBalance > 0.2) improvements.push('Better exposure control needed');
+                    if (overallScore < 70) improvements.push('Improve overall quality');
+                    if (contrast < 30) improvements.push('Increase contrast');
+                    if (avgBrightness < 100) improvements.push('Better lighting needed');
+                    if (compositionScore < 70) improvements.push('Work on composition');
                     
                     resolve({
                         lightingCondition,
@@ -637,23 +997,13 @@
                         colorTemperature,
                         brightness: Math.round(avgBrightness),
                         contrast: Math.round(contrast),
-                        sharpness: Math.round(sharpness),
-                        colorDiversity: Math.round(colorDiversity),
-                        exposureBalance: Math.round(exposureBalance * 100),
                         compositionScore,
                         hasDepth,
-                        framingScore,
-                        balanceScore,
-                        symmetryScore,
-                        ruleOfThirdsScore,
                         detectedGenre,
-                        genreConfidence,
                         recommendations,
                         specificTips,
-                        professionalTips,
                         overallScore,
                         overallQuality,
-                        technicalScore: Math.round(technicalScore),
                         strengths,
                         improvements,
                     });
@@ -741,30 +1091,22 @@
                         colorTemp: imageAnalysis.colorTemperature,
                         brightness: imageAnalysis.brightness,
                         contrast: imageAnalysis.contrast,
-                        sharpness: imageAnalysis.sharpness,
-                        colorDiversity: imageAnalysis.colorDiversity,
-                        exposureBalance: imageAnalysis.exposureBalance,
                     },
                     composition: {
                         ruleOfThirds: imageAnalysis.compositionScore > 70 ? 'Good composition' : 'Consider rule of thirds',
                         depth: imageAnalysis.hasDepth ? 'Good depth perception' : 'Try adding depth',
                         framing: imageAnalysis.compositionScore > 75 ? 'Well-framed' : 'Consider better framing',
                         balance: imageAnalysis.compositionScore > 70 ? 'Good balance' : 'Try improving balance',
-                        score: imageAnalysis.compositionScore,
-                        ruleOfThirdsScore: imageAnalysis.ruleOfThirdsScore,
                     },
                     settings: {
                         current: `Resolution: ${metadata.resolution}, File Size: ${metadata.fileSize}, Quality: ${imageAnalysis.overallQuality}`,
                         recommended: imageAnalysis.recommendations.join(', '),
-                        reasoning: `Based on comprehensive analysis of ${metadata.resolution} image with ${imageAnalysis.overallQuality} quality`,
+                        reasoning: `Based on analysis of ${metadata.resolution} image with ${imageAnalysis.overallQuality} quality`,
                     },
                     tips: imageAnalysis.specificTips,
-                    professionalTips: imageAnalysis.professionalTips,
                     overall: {
                         score: imageAnalysis.overallScore,
-                        technicalScore: imageAnalysis.technicalScore,
                         genre: imageAnalysis.detectedGenre,
-                        genreConfidence: imageAnalysis.genreConfidence,
                         strengths: imageAnalysis.strengths,
                         improvements: imageAnalysis.improvements,
                         timestamp: new Date().toISOString(),
@@ -772,7 +1114,7 @@
                 };
                 
                 updateAnalysisPanel(analysis);
-                alert(`Comprehensive analysis complete! Overall Score: ${imageAnalysis.overallScore}/100, Technical Score: ${imageAnalysis.technicalScore}/100`);
+                alert(`Analysis complete! Score: ${imageAnalysis.overallScore}/100`);
                 
             } catch (error) {
                 console.error('Analysis error:', error);
@@ -823,30 +1165,22 @@
                         colorTemp: imageAnalysis.colorTemperature,
                         brightness: imageAnalysis.brightness,
                         contrast: imageAnalysis.contrast,
-                        sharpness: imageAnalysis.sharpness,
-                        colorDiversity: imageAnalysis.colorDiversity,
-                        exposureBalance: imageAnalysis.exposureBalance,
                     },
                     composition: {
                         ruleOfThirds: imageAnalysis.compositionScore > 70 ? 'Good composition' : 'Consider rule of thirds',
                         depth: imageAnalysis.hasDepth ? 'Good depth perception' : 'Try adding depth',
                         framing: imageAnalysis.compositionScore > 75 ? 'Well-framed' : 'Consider better framing',
                         balance: imageAnalysis.compositionScore > 70 ? 'Good balance' : 'Try improving balance',
-                        score: imageAnalysis.compositionScore,
-                        ruleOfThirdsScore: imageAnalysis.ruleOfThirdsScore,
                     },
                     settings: {
                         current: `Resolution: ${metadata.resolution}, File Size: ${metadata.fileSize}, Quality: ${imageAnalysis.overallQuality}`,
                         recommended: imageAnalysis.recommendations.join(', '),
-                        reasoning: `Based on comprehensive analysis of ${metadata.resolution} image with ${imageAnalysis.overallQuality} quality`,
+                        reasoning: `Based on analysis of ${metadata.resolution} image with ${imageAnalysis.overallQuality} quality`,
                     },
                     tips: imageAnalysis.specificTips,
-                    professionalTips: imageAnalysis.professionalTips,
                     overall: {
                         score: imageAnalysis.overallScore,
-                        technicalScore: imageAnalysis.technicalScore,
                         genre: imageAnalysis.detectedGenre,
-                        genreConfidence: imageAnalysis.genreConfidence,
                         strengths: imageAnalysis.strengths,
                         improvements: imageAnalysis.improvements,
                         timestamp: new Date().toISOString(),
@@ -854,7 +1188,7 @@
                 };
                 
                 updateAnalysisPanel(analysis);
-                alert(`Comprehensive analysis complete! Overall Score: ${imageAnalysis.overallScore}/100, Technical Score: ${imageAnalysis.technicalScore}/100`);
+                alert(`Analysis complete! Score: ${imageAnalysis.overallScore}/100`);
                 
             } catch (error) {
                 console.error('Analysis error:', error);
@@ -892,17 +1226,12 @@
                     colorTemp: 'Daylight (5500K)',
                     brightness: 'Balanced',
                     contrast: 'Good',
-                    sharpness: 'Live feed',
-                    colorDiversity: 'Good',
-                    exposureBalance: 'Balanced',
                 },
                 composition: {
                     ruleOfThirds: 'Consider applying rule of thirds for better composition',
                     depth: 'Good depth of field',
                     framing: 'Well-framed subject',
                     balance: 'Good balance',
-                    score: 75,
-                    ruleOfThirdsScore: 60,
                 },
                 settings: {
                     current: 'Live camera feed - 1280x720 resolution',
@@ -914,16 +1243,9 @@
                     'Consider using composition overlays',
                     'Experiment with different lighting conditions',
                 ],
-                professionalTips: [
-                    'Use manual focus for better control',
-                    'Consider using a tripod for stability',
-                    'Experiment with different aperture settings',
-                ],
                 overall: {
                     score: 75,
-                    technicalScore: 70,
                     genre: 'Live Photography',
-                    genreConfidence: 60,
                     strengths: ['Good technical quality', 'Clear image capture', 'Proper exposure'],
                     improvements: ['Try different compositions', 'Experiment with angles', 'Consider lighting variations'],
                     timestamp: new Date().toISOString(),
@@ -931,7 +1253,7 @@
             };
             
             updateAnalysisPanel(mockAnalysis);
-            alert('Live scene analysis complete! Check the comprehensive analysis panel below.');
+            alert('Live scene analysis complete! Check the analysis panel below.');
         }
 
         function updateAnalysisPanel(analysis) {
@@ -939,10 +1261,7 @@
                 <div class="overall-score">
                     <div class="score-number">${analysis.overall.score}</div>
                     <div class="score-label">Overall Score / 100</div>
-                    <div style="margin-top: 8px; font-size: 14px; opacity: 0.8;">
-                        Technical: ${analysis.overall.technicalScore}/100 | 
-                        Genre: ${analysis.overall.genre} (${analysis.overall.genreConfidence}% confidence)
-                    </div>
+                    <div style="margin-top: 8px; font-size: 14px; opacity: 0.8;">${analysis.overall.genre}</div>
                 </div>
 
                 <div class="analysis-grid">
@@ -983,7 +1302,7 @@
                     </div>
 
                     <div class="analysis-section">
-                        <div class="section-title">💡 Advanced Lighting Analysis</div>
+                        <div class="section-title">💡 Lighting Analysis</div>
                         <div class="analysis-item">
                             <div class="analysis-label">Condition</div>
                             <div class="analysis-value">${analysis.lighting.condition}</div>
@@ -998,32 +1317,16 @@
                         </div>
                         <div class="analysis-item">
                             <div class="analysis-label">Brightness</div>
-                            <div class="analysis-value">${analysis.lighting.brightness}/255</div>
+                            <div class="analysis-value">${analysis.lighting.brightness}</div>
                         </div>
                         <div class="analysis-item">
                             <div class="analysis-label">Contrast</div>
                             <div class="analysis-value">${analysis.lighting.contrast}</div>
                         </div>
-                        <div class="analysis-item">
-                            <div class="analysis-label">Sharpness</div>
-                            <div class="analysis-value">${analysis.lighting.sharpness}%</div>
-                        </div>
-                        <div class="analysis-item">
-                            <div class="analysis-label">Color Diversity</div>
-                            <div class="analysis-value">${analysis.lighting.colorDiversity}</div>
-                        </div>
-                        <div class="analysis-item">
-                            <div class="analysis-label">Exposure Balance</div>
-                            <div class="analysis-value">${analysis.lighting.exposureBalance}%</div>
-                        </div>
                     </div>
 
                     <div class="analysis-section">
-                        <div class="section-title">🎨 Composition Analysis</div>
-                        <div class="analysis-item">
-                            <div class="analysis-label">Overall Score</div>
-                            <div class="analysis-value">${analysis.composition.score}/100</div>
-                        </div>
+                        <div class="section-title">🎨 Composition</div>
                         <div class="analysis-item">
                             <div class="analysis-label">Rule of Thirds</div>
                             <div class="analysis-value">${analysis.composition.ruleOfThirds}</div>
@@ -1043,7 +1346,7 @@
                     </div>
 
                     <div class="analysis-section">
-                        <div class="section-title">⚙️ Settings & Recommendations</div>
+                        <div class="section-title">⚙️ Settings</div>
                         <div class="analysis-item">
                             <div class="analysis-label">Current</div>
                             <div class="analysis-value">${analysis.settings.current}</div>
@@ -1066,13 +1369,6 @@
                     </ul>
                 </div>
 
-                <div class="professional-tips">
-                    <h4>⭐ Professional Recommendations</h4>
-                    <ul>
-                        ${analysis.professionalTips.map(tip => `<li>${tip}</li>`).join('')}
-                    </ul>
-                </div>
-
                 <div class="analysis-section">
                     <div class="section-title">✅ Strengths</div>
                     <ul class="tips-list">
@@ -1091,188 +1387,10 @@
             analysisPanel.style.display = 'block';
         }
 
-        function showEnhancementPanel() {
-            const imageData = capturedPhotoData || uploadedImageData;
-            if (!imageData) {
-                alert('No image available for enhancement. Please capture or upload a photo first.');
-                return;
-            }
-
-            currentImageForEnhancement = imageData;
-            originalPreview.src = imageData;
-            enhancedPreview.src = imageData;
-            enhancementPanel.style.display = 'block';
-            downloadEnhancedBtn.style.display = 'none';
-            
-            // Automatically apply enhancement
-            setTimeout(() => {
-                applyAutoEnhancement();
-            }, 500);
-        }
-
-        function applyAutoEnhancement() {
-            if (!currentImageForEnhancement) return;
-
-            const img = new Image();
-            img.onload = () => {
-                const canvas = document.createElement('canvas');
-                const ctx = canvas.getContext('2d');
-                
-                canvas.width = img.width;
-                canvas.height = img.height;
-                ctx.drawImage(img, 0, 0);
-                
-                const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-                const data = imageData.data;
-                
-                // Analyze image to determine optimal enhancements
-                let totalBrightness = 0;
-                let totalContrast = 0;
-                let colorVariance = 0;
-                
-                for (let i = 0; i < data.length; i += 4) {
-                    const r = data[i];
-                    const g = data[i + 1];
-                    const b = data[i + 2];
-                    const brightness = (r + g + b) / 3;
-                    totalBrightness += brightness;
-                    
-                    // Calculate local contrast
-                    if (i > 0 && i < data.length - 4) {
-                        const prevBrightness = (data[i-4] + data[i-3] + data[i-2]) / 3;
-                        totalContrast += Math.abs(brightness - prevBrightness);
-                    }
-                    
-                    // Calculate color variance
-                    const avgColor = (r + g + b) / 3;
-                    colorVariance += Math.sqrt((r - avgColor) ** 2 + (g - avgColor) ** 2 + (b - avgColor) ** 2);
-                }
-                
-                const pixelCount = data.length / 4;
-                const avgBrightness = totalBrightness / pixelCount;
-                const avgContrast = totalContrast / pixelCount;
-                const avgColorVariance = colorVariance / pixelCount;
-                
-                // Determine optimal enhancement values based on analysis
-                let brightnessAdjust = 0;
-                let contrastAdjust = 0;
-                let saturationAdjust = 0;
-                let sharpnessAdjust = 0;
-                
-                // Brightness optimization
-                if (avgBrightness < 100) {
-                    brightnessAdjust = Math.min(30, (100 - avgBrightness) * 0.3);
-                } else if (avgBrightness > 200) {
-                    brightnessAdjust = Math.max(-20, (100 - avgBrightness) * 0.2);
-                }
-                
-                // Contrast enhancement
-                if (avgContrast < 20) {
-                    contrastAdjust = Math.min(25, (20 - avgContrast) * 1.2);
-                } else if (avgContrast > 40) {
-                    contrastAdjust = Math.max(-10, (40 - avgContrast) * 0.5);
-                }
-                
-                // Saturation enhancement
-                if (avgColorVariance < 30) {
-                    saturationAdjust = Math.min(20, (30 - avgColorVariance) * 0.7);
-                }
-                
-                // Sharpness enhancement
-                if (avgContrast < 25) {
-                    sharpnessAdjust = Math.min(30, (25 - avgContrast) * 1.2);
-                }
-                
-                console.log(`🤖 Auto-enhancement: Brightness +${brightnessAdjust}, Contrast +${contrastAdjust}, Saturation +${saturationAdjust}, Sharpness +${sharpnessAdjust}`);
-                
-                // Apply enhancements
-                for (let i = 0; i < data.length; i += 4) {
-                    let r = data[i];
-                    let g = data[i + 1];
-                    let b = data[i + 2];
-                    
-                    // Brightness adjustment
-                    r += brightnessAdjust;
-                    g += brightnessAdjust;
-                    b += brightnessAdjust;
-                    
-                    // Contrast adjustment
-                    const contrastFactor = (259 * (contrastAdjust + 255)) / (255 * (259 - contrastAdjust));
-                    r = contrastFactor * (r - 128) + 128;
-                    g = contrastFactor * (g - 128) + 128;
-                    b = contrastFactor * (b - 128) + 128;
-                    
-                    // Saturation adjustment
-                    const gray = 0.299 * r + 0.587 * g + 0.114 * b;
-                    const saturationFactor = (saturationAdjust + 100) / 100;
-                    r = gray + saturationFactor * (r - gray);
-                    g = gray + saturationFactor * (g - gray);
-                    b = gray + saturationFactor * (b - gray);
-                    
-                    // Clamp values
-                    data[i] = Math.max(0, Math.min(255, r));
-                    data[i + 1] = Math.max(0, Math.min(255, g));
-                    data[i + 2] = Math.max(0, Math.min(255, b));
-                }
-                
-                // Apply sharpening if needed
-                if (sharpnessAdjust > 0) {
-                    const sharpeningKernel = [
-                        0, -sharpnessAdjust/100, 0,
-                        -sharpnessAdjust/100, 1 + 4*sharpnessAdjust/100, -sharpnessAdjust/100,
-                        0, -sharpnessAdjust/100, 0
-                    ];
-                    
-                    const tempData = new Uint8ClampedArray(data);
-                    for (let y = 1; y < canvas.height - 1; y++) {
-                        for (let x = 1; x < canvas.width - 1; x++) {
-                            const idx = (y * canvas.width + x) * 4;
-                            
-                            let r = 0, g = 0, b = 0;
-                            for (let ky = -1; ky <= 1; ky++) {
-                                for (let kx = -1; kx <= 1; kx++) {
-                                    const kidx = ((y + ky) * canvas.width + (x + kx)) * 4;
-                                    const kernelIdx = (ky + 1) * 3 + (kx + 1);
-                                    r += tempData[kidx] * sharpeningKernel[kernelIdx];
-                                    g += tempData[kidx + 1] * sharpeningKernel[kernelIdx];
-                                    b += tempData[kidx + 2] * sharpeningKernel[kernelIdx];
-                                }
-                            }
-                            
-                            data[idx] = Math.max(0, Math.min(255, r));
-                            data[idx + 1] = Math.max(0, Math.min(255, g));
-                            data[idx + 2] = Math.max(0, Math.min(255, b));
-                        }
-                    }
-                }
-                
-                ctx.putImageData(imageData, 0, 0);
-                
-                canvas.toBlob((blob) => {
-                    if (blob) {
-                        const url = URL.createObjectURL(blob);
-                        enhancedPreview.src = url;
-                        downloadEnhancedBtn.style.display = 'block';
-                        downloadEnhancedBtn.onclick = () => {
-                            const a = document.createElement('a');
-                            a.href = url;
-                            a.download = `ai-enhanced-photo-${Date.now()}.jpg`;
-                            a.click();
-                        };
-                        
-                        console.log(`🤖 AI Enhancement Complete! Applied optimizations automatically.`);
-                    }
-                }, 'image/jpeg', 0.9);
-            };
-            
-            img.src = currentImageForEnhancement;
-        }
-
         // Event Listeners
         document.getElementById('cameraModeBtn').addEventListener('click', () => setMode('camera'));
         document.getElementById('uploadModeBtn').addEventListener('click', () => setMode('upload'));
         document.getElementById('compositionBtn').addEventListener('click', toggleComposition);
-        document.getElementById('examplesBtn').addEventListener('click', showExamples);
         document.getElementById('startCameraBtn').addEventListener('click', startCamera);
         document.getElementById('stopCameraBtn').addEventListener('click', stopCamera);
         document.getElementById('captureBtn').addEventListener('click', capturePhoto);
@@ -1284,8 +1402,10 @@
             }
         });
         document.getElementById('analyzeLastPhotoBtn').addEventListener('click', analyzeCapturedPhoto);
-        document.getElementById('enhanceBtn').addEventListener('click', showEnhancementPanel);
         document.getElementById('fileInput').addEventListener('change', handleFileUpload);
+
+        // Initialize
+        updateDebugInfo();
     </script>
 </body>
 </html>
